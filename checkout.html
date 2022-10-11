@@ -5,8 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     
+    <link
+      rel="icon"
+      href="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Vert_peach_black_font_insta_1_96x.png?v=1614294699"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./checkout_styles/checkout.css">
+     
+</head>
+<body id="checkout_body">
+    <div id="checkout_nav_heading">
+        <div class="checkout_nav_div1"><a href=""><img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/logo_180x_2x_ede3918f-6d55-4630-a3cd-e33ecf12b1b2.png?20248" alt="checkout_nav_logo"></a></div>
+    </div>
+
+    <div id="checkout_mid_page">
+        <div class="checkout_mid1">
+            <div class="checkoutmid_p1">
+                <div class="checkout_bp1">
+                    <ol>
+                        <li><a class="checkout_carticon"href="">cart</a></li>
+                     <li><img class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2735/2735071.png" alt=""></li>
+                     <li><span class="checkout_info">Information</span></li>
+                     <li><img class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2735/2735071.png" alt=""></li>
+                     <li><span class="checkout_shipping">Shipping</span></li>
+                     <li><img class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2735/2735071.png" alt=""></li>
+                     <li><span class="checkout_shipping">Payment</span></li>
+                    </ol>
+                </div>
+                <div class="checkout_bp2">
+                     <form action="" class="checkout_info1">
+                        <div class="checout_contact_info">
+                            <div class="checkout_info_c1"><span class="checkout_cont_info1">Contact Information</span></div>
+                            <div class="checkout_info_c2">
+                                <span aria-hidden="true">Have an account?</span>
+                                 <a href="" class="checkout_login_coin">  Login to Redeem BlissCoins </a>
+                            </div>
+                        </div>
+                        <input type="email" id="checkout_emailbox" placeholder="Email">
+                        <div class="checkout_checkbox">
+                            <input type="checkbox" name="" class="checout_checkbox_input"  ::after>
+                            <span>Email and SMS me with news and offers</span>
+                        </div>
+                        <div class="checkout_adress_head">
+                            <span>Shipping Adress</span>
+                        </div>
+                        <div class="checkout_country">
+                            <select name="" id="" class="checkout_country_s1" placeholder="Country/region">
+                                <option data-code="IN" selected="selected" value="India">India</option>
+                            </select>
+                        </div>
+                        <div id="checkout_name">
+                            <input type="text" id="checkout_first_name" placeholder="First Name">
+                            <input type="text" id="checkout_last_name" placeholder="Last Name">
+                        </div>
+                        <div id="checkout_adress">
+                            <input type="text" id="checkout_adress1" placeholder="Adresss">
+                        </div>
+                        <div id="checkout_adress">
+                            <input type="text" id="checkout_apartment" placeholder="Apartment,Suite,etc.(Optional)">
+                        </div>
+                        <div id="checkout_city_pin">
+                            <input type="text" id="checkout_city" placeholder="City">
+                            <select name="State"  id="checkout_state">
+                                <option value="State" >State</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                 <option value="West Bengal">West Bengal</option>
+                            </select>
+                            <input type="number" id="checkout_pincode" placeholder="Pincode">
+                        </div>
+                        <div id="checkout_phone">
+                            <input type="number" id="checkout_phone1" placeholder="Phone" >
+                        </div>
+                        <!-- <div id="checkout_checkbox_bottom">
+                            <input type="checkbox" name="" id="checkout_checkbox_bottom1">
+                        </div> -->
+                        <div id="checkout_button">
+                            <a href="" id="checkout_button_returncart"><img  class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2722/2722991.png" alt="Return To Cart">Return To Cart</a>
+                            <a href="" id="checkout_button_shipping">Continue To Shipping</a>
+                        </div>
+                        <div id="checkout_bottom_p">
+                            <a href="" class="checkout_bottom_p1">Refund policy</a>
+                            <a href="" class="checkout_bottom_p2">Shipping policy</a>
+                            <a href="" class="checkout_bottom_p3">Privacy policy</a>
+                            <a href="" class="checkout_bottom_p4">Terms of sevices</a>
+                        </div>
+                     </form>
+                </div>
+            </div>
+           
+        </div>
+        <div class="checkout_mid2">
+            <div class="checkoutmid_p2">
+              <div class="checkout_table_div"> <table>
+                <caption class="checkout_hidden_item">Shopping Cart</caption>
+                <thead class="checkout_product_table">
+                    <tr class="checkout_product_hrow">
+                      <th>
+                        <span class="checkout_hidden_item">Product Image</span>
+                      </th>
+                      <th>
+                        <span class="checkout_hidden_item">Description</span>
+                      </th>
+                      <th>
+                        <span class="checkout_hidden_item">Quantity</span>
+                      </th>
+                      <th>
+                        <span class="checkout_hidden_item">Price</span>
+                      </th>
+                      
+                    </tr>
+                </thead>
+                <tbody class="checkout_cart_items">
+
+                </tbody>
+               </table>
+            </div>
+
+            <div class="checkout_coupan_div">
+                <input type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
+                <button class="checkout_apply_coupan_b">Apply</button>
+            </div>
+            <div class="checkout_cart_total">
+                <span>Subtotal</span>
+                <div class="checkout_cart_subtotal_price"></div>
+            </div>
+
+            <div class="checkout_shipping_total">
+                <span>Shipping</span>
+                <div class="checkout_cart_subtotal_price">
+                    <h4>Free</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="./scripts/checkout.js"></script>
