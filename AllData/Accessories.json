@@ -1,0 +1,56 @@
+[
+    {
+        "Image--lazyLoaded src": "https://cdn.shopify.com/s/files/1/0404/0196/1115/files/AllDayPerformanceSocks-NavThumbnail.png?v=1655361252",
+        "Image--lazyLoaded src 2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/files/NoShowSocks-NavThumbnail.png?v=1658399943",
+        "Image--lazyLoaded src 3": "https://cdn.shopify.com/s/files/1/0404/0196/1115/files/ActiveCushionedSocks-NavThumbnail.png?v=1655361252",
+        "custom-btn": "",
+        "shopify-section": "",
+        "content": "",
+        "content 2": ""
+    },
+    {
+        "Image--lazyLoaded src": "https://cdn.shopify.com/s/files/1/0404/0196/1115/files/BC_Xtrabliss_Festive_Banner_2400x1666_Cohort_01_Non_Royality_copy.jpg?v=1665296759",
+        "Image--lazyLoaded src 2": "",
+        "Image--lazyLoaded src 3": "",
+        "custom-btn": "SHOP NOW",
+        "shopify-section": ".slick-prev {\n    left: 8px;\n    z-index: 1;\n}\n  .slick-next {\n    right: 32px;\n}\n\n.slick-next:before, .slick-prev:before {\n  font-family: slick;\n  font-size: 17px;\n  line-height: 20px;\n  opacity: .75;\n  color: #fff;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background: rgba(0,0,0,.4);\n  padding: 10px;\n  border-radius: 50%;\n}",
+        "content": "",
+        "content 2": ""
+    },
+    {
+        "Image--lazyLoaded src": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/AllDayPerformaceSocks-Thumbnail_600x.jpg?v=1654765228",
+        "Image--lazyLoaded src 2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/AllDayPerformaceSocksDAWN-Thumbnail_600x.jpg?v=1654765252",
+        "Image--lazyLoaded src 3": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/No-Show-Socks-Thumbnail_600x.jpg?v=1658315727",
+        "custom-btn": "",
+        "shopify-section": "",
+        "content": "",
+        "content 2": ""
+    },
+    {
+        "Image--lazyLoaded src": "",
+        "Image--lazyLoaded src 2": "",
+        "Image--lazyLoaded src 3": "",
+        "custom-btn": "",
+        "shopify-section": "#shopify-section-template--16252511748352__166011139310b0a977 .full-width-content {\n    background-color: #ffffff;\n    padding: 40px 20px;\n    text-align: left;\n  }\n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .content-box {\n    max-width: 950px;\n    margin: 0 auto;\n  }\n\n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .title {\n    font-size: 36px;\n    line-height: 45.17px;\n    font-weight: 700;\n    color: #313030;\n    margin-bottom: 36px;\n    font-family: 'Poppins';\n  }\n  \n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .title span {\n    color: #313030;\n  }\n  \n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .content {\n    font-size: 18px;\n    line-height: 30.06px;\n    font-weight: 400;\n    color: #2d2d2d;\n    font-family: \"Open Sans\";\n  }\n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .content p {\n    margin-bottom: 10px;\n  }\n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .btn-link {\n    margin-top: 30px;\n  }\n  #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .btn-link a {\n/*     font-size: 20px;\n    line-height: 30px; */\n    font-weight: 700;\n/*     border: 2px solid; */\n    color: #2d2d2d;\n    border-color: #2d2d2d;\n/*     padding: 5px 10px;\n    font-family: \"Poppins\"; */\n    \n    font-family: 'Open Sans';\n    font-size: 10px;\n    line-height: 14px;\n    padding: 10px 20px;\n    letter-spacing: 0.21em;\n    text-transform: uppercase;\n    border: 1px solid;\n  }\n\n  @media screen and (max-width: 749px) {\n    #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content {\n      padding: 30px 20px;\n      text-align: left;\n    }\n    #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .title {\n      font-size: 28px;\n      line-height: 35.13px;\n      max-width: 280px;\n      margin-bottom: 10px;\n    }\n    #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .title:not(.left) {\n      margin: 0 auto;\n      margin-bottom: 10px;\n    }\n    #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .content {\n      font-size: 14px;\n      line-height: 23.38px;\n    }\n/*     #shopify-section-template--16252511748352__166011139310b0a977 .full-width-content .btn-link a {\n      font-size: 14px;\n      line-height: 21px;\n      border: 1.5px solid;\n    } */\n  }",
+        "content": "#more {display: none;}\n\n#myBtn {\ncolor: white;\nbackground-color: #f99584;\nborder: 0px;\nfont-size: 13px;\npadding: 10px 15px;\n}",
+        "content 2": "Good sports accessories for women seem so hard to come by and sometimes it's just so difficult to understand why. Women's gym wear is incomplete without there being the right accessories to enhance the outfits and ensure that you are able to move as you like. Accessories for women who move by BlissClub focus on rendering maximum comfort to the wearers while also providing additional support to help take your moves to the next level."
+    },
+    {
+        "Image--lazyLoaded src": "",
+        "Image--lazyLoaded src 2": "",
+        "Image--lazyLoaded src 3": "",
+        "custom-btn": "",
+        "shopify-section": "#shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content {\n    background-color: #ffffff;\n    padding: 40px 20px;\n    text-align: left;\n  }\n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .content-box {\n    max-width: 950px;\n    margin: 0 auto;\n  }\n\n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .title {\n    font-size: 36px;\n    line-height: 45.17px;\n    font-weight: 700;\n    color: #313030;\n    margin-bottom: 5px;\n    font-family: 'Poppins';\n  }\n  \n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .title span {\n    color: #313030;\n  }\n  \n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .content {\n    font-size: 18px;\n    line-height: 30.06px;\n    font-weight: 400;\n    color: #2d2d2d;\n    font-family: \"Open Sans\";\n  }\n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .content p {\n    margin-bottom: 10px;\n  }\n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .btn-link {\n    margin-top: 30px;\n  }\n  #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .btn-link a {\n/*     font-size: 20px;\n    line-height: 30px; */\n    font-weight: 700;\n/*     border: 2px solid; */\n    color: #2d2d2d;\n    border-color: #2d2d2d;\n/*     padding: 5px 10px;\n    font-family: \"Poppins\"; */\n    \n    font-family: 'Open Sans';\n    font-size: 10px;\n    line-height: 14px;\n    padding: 10px 20px;\n    letter-spacing: 0.21em;\n    text-transform: uppercase;\n    border: 1px solid;\n  }\n\n  @media screen and (max-width: 749px) {\n    #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content {\n      padding: 30px 20px;\n      text-align: left;\n    }\n    #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .title {\n      font-size: 28px;\n      line-height: 35.13px;\n      max-width: 280px;\n      margin-bottom: 10px;\n    }\n    #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .title:not(.left) {\n      margin: 0 auto;\n      margin-bottom: 10px;\n    }\n    #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .content {\n      font-size: 14px;\n      line-height: 23.38px;\n    }\n/*     #shopify-section-template--16252511748352__1660111469a6964e8f .full-width-content .btn-link a {\n      font-size: 14px;\n      line-height: 21px;\n      border: 1.5px solid;\n    } */\n  }",
+        "content": "@media screen and (min-width: 601px) {\n  div.example {\n    font-size: 18px;\n  }\n}\n\n@media screen and (max-width: 600px) {\n  div.example {\n    font-size: 12px;\n  }\n}",
+        "content 2": "Popular Searches"
+    },
+    {
+        "Image--lazyLoaded src": "",
+        "Image--lazyLoaded src 2": "",
+        "Image--lazyLoaded src 3": "",
+        "custom-btn": "JOIN NOW!",
+        "shopify-section": "",
+        "content": "",
+        "content 2": ""
+    }
+]
