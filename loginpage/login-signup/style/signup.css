@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+/* #form{
+    background: url('https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Logo.jpg?v=1652856086');
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+} */
+
+#form:after{
+    content:'';
+    top: 0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0,0.7);
+}
+
+#form{
+    position: absolute;
+    top: 20%;
+    left:40%;
+    width:45vh;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    background-color:rgba(225,225,225,0.4);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+input[type="Submit"]{
+    color:black;
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+
+/* <<----hover effect----->> */
+
+input[type="Submit"]:hover{
+    background-color: white;
+    color: saddlebrown;
+    
+}
