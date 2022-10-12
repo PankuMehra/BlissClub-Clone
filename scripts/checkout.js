@@ -1,3 +1,16 @@
+import { checkout_cart, displayitems } from "../checkout_components/checkout_cart.js";
+
+
+document.querySelector(".checkout_mid2").innerHTML=checkout_cart();
+
+
+
+
+
+
+
+
+
 class item{
     constructor(a,b,c,d){
         this.name=a;
@@ -12,55 +25,60 @@ let item1=new item("Bulbull Burgundy","https://cdn.shopify.com/s/files/1/0404/01
 let item2=new item("Farah Forest","https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCSB-Forest-Thumbnail_600x.jpg?v=1644308952",1499,2)
 let item3=new item("Farah Forest","https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCSB-Forest-Thumbnail_600x.jpg?v=1644308952",1499,5)
 
-// let cartitem=localStorage.getItem
+
 let allitems=[];
 
 allitems.push(item1,item2,item3);
 localStorage.setItem("allitems",JSON.stringify(allitems));
 
-
-
 let allitem=JSON.parse(localStorage.getItem("allitems"))||[];
-// if(allitem.length>0){
-//     displayitems(allitem);
-// }
-console.log(allitem);
-function displayitems(allitem){
-//    let allitems=JSON.parse(localStorage.getItem("allitems"))||[];
-   allitem.forEach(element => {
-    let tr=document.createElement("tr");
-    let td1=document.createElement("td");
-    let th2=document.createElement("th");
-    let td3=document.createElement("td");
-    let td4=document.createElement("td");
-    let thumbdiv=document.createElement("div");
-    let imagediv=document.createElement("div");
-    console.log(element);
-    let itemdiv=document.createElement("div");
-    itemdiv.setAttribute("id","checkout_cart_itemdiv");
-    // let name=document.createElement("h3");
-    // name.innerText=element.name;
-    let image=document.createElement("img");
-    image.setAttribute("id","checkout_cart_item_image");
-    image.src=element.image;
-    // let price=document.createElement("h3");
-    // price=Number(element.price);
-    // let numberofitem=document.createElement("h4");
-    // numberofitem=element.countofitem;
-    th2.append(element.name);
-    td3.append(element.countofitem);
-    td3.setAttribute("class","checkout_hidden_item");
-    td4.append(element.price);
-    let imgthumb=document.createElement("span");
-    imgthumb.setAttribute("class","checkout_cart_thumbanail")
-    imgthumb.append(element.countofitem);
-    imagediv.append(image);
-    thumbdiv.append(imagediv,imgthumb);
-    td1.append(thumbdiv);
-    tr.append(td1,th2,td3,td4);
-    document.querySelector("tbody").append(tr);
-    // itemdiv.append(image,name,price,numberofitem);
-    // document.querySelector(".checkoutmid_p2").append(itemdiv);
-   })
-}
+
 displayitems(allitem);
+
+
+// export {displayitems};
+
+
+    class shipping_items{
+        constructor(a,b,c,d,e,f,g,h,i,j){
+            this.email=a;
+            this.country=b;
+            this.first_name=c;
+            this.last_name=d;
+            this.adress1=e;
+            this.apartment=f;
+            this.city=g;
+            this.state=h;
+            this.pincode=i;
+            this.phone=j;
+        }
+    }
+
+
+    document.querySelector("#checkout_button_shipping").addEventListener("click",collect_adress);
+    // event.preventDefault();
+
+    // let shipping_adress=[];
+      function collect_adress(){
+    let email=document.querySelector("#checkout_emailbox").value;
+    let country=document.querySelector(".checkout_country_s1").value;
+    let first_name=document.querySelector("#checkout_first_name").value;
+    let last_name=document.querySelector("#checkout_last_name").value;
+    let adress1=document.querySelector("#checkout_adress1").value;
+    let apartment=document.querySelector("#checkout_apartment").value;
+    let city=document.querySelector("#checkout_city").value;
+    let state=document.querySelector("#checkout_state").value;
+    let pincode=document.querySelector("#checkout_pincode").value;
+    let phone=document.querySelector("#checkout_phone1").value;
+    let adressbag=`${adress1},${apartment},${pincode},${state},${country}`;
+    let email_adress=[];
+    email_adress.push(email);
+    let adress=[];
+    adress.push(adressbag);
+    let all_shipping_items=new shipping_items(email,country,first_name,last_name,adress1,apartment,city,state,pincode,phone);
+    localStorage.setItem("email",JSON.stringify(email_adress));
+    localStorage.setItem("adress",JSON.stringify(all_shipping_items));
+    // window.location.href="./Shipping.html";
+
+}
+// collect_adress();

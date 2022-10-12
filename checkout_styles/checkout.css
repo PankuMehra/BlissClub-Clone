@@ -54,7 +54,7 @@
 
 
 .checkout_mid1{
-    width: 55%;
+    width: 58%;
     background-color: white;
 }
 .checkoutmid_p1{
@@ -103,7 +103,7 @@
 #checkout_emailbox{
     margin-top: 20px;
     width: 100%;
-    height:40px;
+    height:50px;
     padding-left: 10px;
     border: 1px solid #737373;
     border-radius: 5px;
@@ -123,7 +123,7 @@
 }
 #checkout_first_name{
     width: 47%;
-    height: 30px;
+    height: 50px;
     padding-left: 10px;
     border: 1px solid #737373;
     border-radius: 5px;
@@ -135,7 +135,7 @@
 }
 #checkout_last_name{
     width: 47%;
-    height: 30px;
+    height: 50px;
     padding-left: 10px;
     border: 1px solid #737373;
     border-radius: 5px;
@@ -147,8 +147,8 @@
 }
 #checkout_checkbox input{
     border-width: 18px;
-    border-color: #f99584;
-    background-color: #f99584;
+    /* border-color: #f99584; */
+    background-color: white;
     border-radius: 5px;
     accent-color: #f99584;
 }
@@ -158,7 +158,7 @@
 .checkout_country_s1{
     margin-top: 20px;
     width: 100%;
-    height:40px;
+    height:50px;
     padding-left: 10px;
     border: 1px solid #737373;
     border-radius: 5px;
@@ -177,7 +177,7 @@
 #checkout_adress1{
     margin-top: 20px;
     width: 100%;
-    height:40px;
+    height:50px;
     padding-left: 10px;
     border:1px solid #737373; 
     border-radius: 5px;
@@ -190,7 +190,7 @@
 #checkout_apartment{
     margin-top: 20px;
     width: 100%;
-    height:40px;
+    height:50px;
     padding-left: 10px;
     border:1px solid #737373; 
     border-radius: 5px;
@@ -207,7 +207,8 @@
 }
 #checkout_city{
    width: 30%;
-    height:30px;
+   
+    height:50px;
     padding-left: 10px;
     border:1px solid #737373; 
     border-radius: 5px; 
@@ -218,7 +219,7 @@
 }
 #checkout_state{
     width: 30%;
-    height:30px;
+    height:50px;
     padding-left: 10px;
     border:1px solid #737373; 
     border-radius: 5px; 
@@ -241,7 +242,7 @@
 #checkout_phone1{
     margin-top: 20px;
     width: 100%;
-    height:40px;
+    height:50px;
     padding-left: 10px;
     border:1px solid #737373; 
     border-radius: 5px;
@@ -252,17 +253,21 @@
 }
 #checkout_button{
     display: flex;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 100%;
+    height:150px;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cbc5c1;
+    /* margin-top: 50px; */
 }
 #checkout_button_returncart{
-    width: 20%;
+    width: 30%;
     border: none;
     text-decoration: none;
     color: #f99584;
     background-color: white;
-    text-align: center;
+    /* text-align: center; */
     padding-top: 12px;
 }
 #checkout_button_shipping{
@@ -275,13 +280,17 @@
     height: 50px;
     text-align: center;
     padding-top: 12px;
+    
+    
 }
 #checkout_bottom_p{
     display: flex;
     width: 80%;
-    margin-top: 100px;
-    height: 40px;
+    /* margin-top: 100px; */
+    height: 60px;
     justify-content: space-between;
+    /* border-top: 1px solid #cbc5c1; */
+    align-items: center;
 }
 .checkout_bottom_p1{
   text-decoration: none;
@@ -317,8 +326,8 @@
 }
 
 #checkout_cart_item_image{
-   width: 50px; 
-   height: 50px;
+   width: 80px; 
+   height: 80px;
 }
 #checkout_cart_itemdiv{
     display: flex;
@@ -329,9 +338,9 @@
     font-weight: 500;
     color: #333333;
 }
-/* .checkout_product_table{
+ .checkout_product_table{
     display: none;
-} */
+}
 .checkout_hidden_item{
 
     display: none;
@@ -363,20 +372,25 @@
 .checkout_coupan_div{
     display: flex;
     width: 90%;
+    height: 80px;
     justify-content: space-between;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    border-bottom: 1px solid #cbc5c1;
+    align-items: center;
 }
 .checkout_gift_coupan_input{
     width: 75%;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     background-color: white;
     padding-left: 10px;
     border: 1px solid #737373;
 }
 .checkout_gift_coupan_input:focus{
-
+    outline: none ;
+     border: 2.5px solid #f99584;
 }
+
 .checkout_apply_coupan_b{
     width: 20%;
     height: 40px;
@@ -384,25 +398,60 @@
     color: white;
     border: 0px;
 }
+.checkout_cart_price111{
+    width: 90%;
+    height: 120px;
+    border-bottom: 1px solid #cbc5c1;
+    justify-content: space-around;
+}
 .checkout_cart_total{
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .checkout_shipping_total{
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .checkout_table_div{
+    width: 90%;
     height: 200px;
     overflow-y: scroll;
-    
+    border-bottom: 1px solid #cbc5c1;
+    /* justify-content: space-between; */
 }
 
+
+.checkout_price_div11{
+    display: grid;
+    
+}
+.checkout_cart_total{
+    display: flex;
+    width: 90%;
+    height: 80px;
+    align-items: center;
+}
+td{
+    padding: 10px;
+}
+.checkout_image_thumb_main{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout_cart_thumbanail{
+    position:relative;
+    z-index: 1;
+    margin-left: -20px;
+    
+}
+.checkout_cart_image{
+    padding: 5px;
+} 
 /* table{
     border-collapse: collapse;
     border-spacing: 0;
