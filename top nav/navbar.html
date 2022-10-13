@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="side-nav.css" />
   </head>
   <body>
-    <!-- side nav -->
-    <div id="side-nav-outer-box">
-      <header class="side-nav-header">
+    <div id="side-nav-Modal">
+      <!-- import the side nav here -->
+      <div id="side-nav-outer-box">
+        <header class="side-nav-header">
         <button id="drawer-close-button">
           <ion-icon class="drawer-close-icon" name="close-sharp"></ion-icon>
         </button>
@@ -144,65 +145,61 @@
         </div>
       </div>
     </div>
-    <!-- top header -->
-    <header id="section-header">
-      <div class="header-item1">
-        <button id="side-header-menu-button" class="back-trans">
-          <!-- <ion-icon  name="menu-sharp"></ion-icon> -->
-          <ion-icon id="side-header-menu-icon" name="menu-outline"></ion-icon>
-        </button>
+  </div>
+
+  <!-- top bar -->
+  <header id="section-header">
+    <!-- import top bar here -->
+    <div class="header-item1">
+      <button id="side-header-menu-button" class="back-trans">
+        <!-- <ion-icon  name="menu-sharp"></ion-icon> -->
+        <ion-icon id="side-header-menu-icon" name="menu-outline"></ion-icon>
+      </button>
+    </div>
+    <div id="header-right">
+      <div class="header-item-logo">
+        <img
+          class="header=logo-image"
+          src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/logo_180x.png?v=1651155764"
+          alt=""
+        />
       </div>
-      <div id="header-right">
-        <div class="header-item-logo">
+      <!-- <div class="top-nav-head"> -->
+        <form class="top-bar-search-menu">
+          <input
+          id="top-search"
+            class="input-search-procucts back-trans"
+            type="text"
+            placeholder="search our products"
+          />
+          <button  id="submit-search" class="submit-search back-trans" type="submit"><ion-icon class="search-icon" name="search"></ion-icon></button>
+          <button id="speak" class="back-trans"><ion-icon id="mic-icon" name="mic"></ion-icon></button>
+        </form>
+      <!-- </div> -->
+      <div class="header-item2">
+        <a id="header-item-image-account" href="">
+          <span>EARN BLISS COINS ›</span>
           <img
-            class="header=logo-image"
-            src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/logo_180x.png?v=1651155764"
+            src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/account-mob_40x.png?v=133119758951624850871658468464"
             alt=""
           />
-        </div>
-        <!-- <div class="top-nav-head"> -->
-          <form class="top-bar-search-menu">
-            <input
-            id="top-search"
-              class="input-search-procucts back-trans"
-              type="text"
-              placeholder="search our products"
-            />
-            <button  id="submit-search" class="submit-search back-trans" type="submit"><ion-icon class="search-icon" name="search"></ion-icon></button>
-            <button id="speak" class="back-trans"><ion-icon id="mic-icon" name="mic"></ion-icon></button>
-          </form>
-        <!-- </div> -->
-        <div class="header-item2">
-          <a id="header-item-image-account"  href="">
-            <span>EARN BLISS COINS ›</span>
-            <img
-              src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/account-mob_40x.png?v=133119758951624850871658468464"
-              alt=""
-            />
-          </a>
-          <a id="header-item-image-whatsapp" href="">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/whatsapp-bliss_40x.png?v=126833938998310098061663749308"
-              alt=""
-            />
-          </a>
-          <a id="header-item-image-cart" href="">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/cart_40x.png?v=96190718169835338971658468464"
-              alt=""
-            />
-          </a>
-        </div>
+        </a>
+        <a id="header-item-image-whatsapp" href="">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/whatsapp-bliss_40x.png?v=126833938998310098061663749308"
+            alt=""
+          />
+        </a>
+        <a id="header-item-image-cart" href="">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/cart_40x.png?v=96190718169835338971658468464"
+            alt=""
+          />
+        </a>
       </div>
-    </header>
-
-    <div>
-      <img src="/home/images/insta2.jpg" alt="">
-      <img src="/home/images/insta2.jpg" alt="">
-      <img src="/home/images/insta2.jpg" alt="">
-      <img src="/home/images/insta2.jpg" alt="">
-      <img src="/home/images/insta2.jpg" alt="">
     </div>
+  </header>
+
   </body>
 </html>
 <script
