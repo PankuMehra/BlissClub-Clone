@@ -87,11 +87,12 @@
             <div class="side-nav-head">
               <form class="side-bar-search-menu" action="/search">
                 <input
-                  id="input-search-procucts"
+                id="side-search"
+                  class="input-search-procucts"
                   type="text"
                   placeholder="search our products"
                 />
-                <button id="submit-search" type="submit">ee</button>
+                <button class="submit-search" type="submit">ee</button>
               </form>
             </div>
           </nav>
@@ -144,9 +145,9 @@
       </div>
     </div>
     <!-- top header -->
-    <header class="section-header">
+    <header id="section-header">
       <div class="header-item1">
-        <button id="side-header-menu-button">
+        <button id="side-header-menu-button" class="back-trans">
           <!-- <ion-icon  name="menu-sharp"></ion-icon> -->
           <ion-icon id="side-header-menu-icon" name="menu-outline"></ion-icon>
         </button>
@@ -162,15 +163,17 @@
         <!-- <div class="top-nav-head"> -->
           <form class="top-bar-search-menu">
             <input
-              id="top-input-search-procucts"
+            id="top-search"
+              class="input-search-procucts back-trans"
               type="text"
               placeholder="search our products"
             />
-            <button id="submit-search" type="submit"></button>
+            <button  id="submit-search" class="submit-search back-trans" type="submit"><ion-icon class="search-icon" name="search"></ion-icon></button>
+            <button id="speak" class="back-trans"><ion-icon id="mic-icon" name="mic"></ion-icon></button>
           </form>
         <!-- </div> -->
         <div class="header-item2">
-          <a id="header-item-image-account" href="">
+          <a id="header-item-image-account"  href="">
             <span>EARN BLISS COINS ›</span>
             <img
               src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/account-mob_40x.png?v=133119758951624850871658468464"
@@ -210,4 +213,4 @@
   nomodule
   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 ></script>
-<script src="/top nav/navbar.js"></script>
+<script type="module" src="/top nav/navbar.js"></script>
