@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #heading{
+            display: flex;
+            width:100%;
+        }
+
+        #you_may_also_like_heading{
+            display: flex;
+            width:100%;
+        }
+
+        #x_mark{
+            width:20px;
+            height:20px;
+        }
+
+        #you_may_also_like_heading{
+        }
+
+        #minus_mark{
+            width:20px;
+            height:20px;
+            position: absolute;
+            right:20px;
+        }
+
+        #cart_items{
+            overflow: auto;
+            width: 100%;
+            height: 20vh;
+
+        }
+
+        .cart_item{
+            width: 100%;
+            height: 15vh;
+            padding-top:10px;
+            padding-bottom:10px;    
+        }
+
+        #you_may_also_like_items{
+            width:100%;
+            height: 25vh;
+            display: flex;
+            overflow: auto;
+        }
+
+        #you_may_also_like_image{
+            width: 150px;
+            height: 150px;
+        }
+
+        #you_may_also_like_minus_mark{
+            width:20px;
+            height:20px;
+        }
+
+        #cart_image{
+            width:100px;
+            height:100px;
+            object-fit: cover;
+        }
+
+        #minus_mark_for_reducing_product{
+            width:15px;
+            height:15px;
+            margin-left:5px;
+            margin-right:5px;
+        }
+
+        #plus_mark_for_adding_product{
+            width:20px;
+            height:20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        lable{
+            border: 1px solid black;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: yellow;">
+    
+    <div style="width:30%; background-color: beige; height:100vh; position: absolute; top:0px; left:0px;">
+        <div id="heading">
+            <div style="width:50%;">
+                <span>SHOPPING CART</span>
+            </div>
+            <div style="width:50%; display: flex; justify-content: flex-end;">
+                <svg  id="x_mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+            </div>
+            
+        </div>
+        <div id="cart_items">
+            <div style="display:flex;" class="cart_item">
+                <div>
+                    <img id="cart_image" src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/premium_tee_-_xl__01_pear_orchid_bloom_720x.jpg?v=1664264789">
+                </div>
+                <div id="right_side_cart_item_div" style=" margin-left: 10px;">
+                    <h3 style="margin:5px 0;" id="name">FIT-ME-RIGHT-TEES</h3>
+                    <p id="cart_item_variants">Naina Navy / L-una</p>
+                    <span style="text-decoration:line-through;">Rs. 1.999</span><span>Rs.999</Rs></span>
+                </div>
+                <div style="align-items:flex-end; display:flex;" id="plus_minus">
+                    <div style="display: flex; background-color: white;">
+                        <svg id="minus_mark_for_adding_product" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                        <span style="margin-left:5px; margin-right:5px;" id="number_of_products">1</span>
+                        <svg id="plus_mark_for_adding_product" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path  d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;" class="cart_item">
+                <div>
+                    <img id="cart_image" src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/premium_tee_-_xl__01_pear_orchid_bloom_720x.jpg?v=1664264789">
+                </div>
+                <div id="right_side_cart_item_div" style=" margin-left: 10px;">
+                    <h3 style="margin:5px 0;" id="name">FIT-ME-RIGHT-TEES</h3>
+                    <p id="cart_item_variants">Naina Navy / L-una</p>
+                    <span style="text-decoration:line-through;">Rs. 1.999</span><span>Rs.999</Rs></span>
+                </div>
+                <div style="align-items:flex-end; display:flex;" id="plus_minus">
+                    <div style="display: flex; background-color: white;">
+                        <svg id="minus_mark_for_adding_product" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                        <span style="margin-left:5px; margin-right:5px;" id="number_of_products">1</span>
+                        <svg id="plus_mark_for_adding_product" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                    </div>
+                </div>
+            </div>
+         </div>
+    
+         <div id="you_may_also_like_heading">
+            <div style="width:50%;">
+                <span>YOU MAY ALSO LIKE</span>
+            </div>
+            <div style="width:50%; display: flex; justify-content: flex-end;">
+                <svg onclick="minimise_may_like()" id="you_may_also_like_minus_mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path id="you_may_" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
+        </div>
+
+        
+    
+        <div id="you_may_also_like_items" style="position: relative; transition: 0.5s; display: flex; overflow: auto;">
+            
+            
+                <svg onclick="go_left()" style="width:20px; height:20px; position:absolute; z-index:100; top:50%; right:80%; left:20%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/></svg>
+            
+            
+            <svg onclick="go_right()" style="display:none;width:100%; height:100%; position:absolute; border: 2px solid red; right: 0px; top:50%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            
+            <div style="display:flex; margin-right: 20px; flex-shrink: 0;" class="cart_item">
+                <div>
+                    <img id="you_may_also_like_image" src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/premium_tee_-_xl__03_pear_orchid_bloom_720x.jpg?v=1664264789">
+                </div>
+                <div style="margin-left:20px;flex-shrink: 0;" id="right_side_cart_item_div">
+                    <h3 style="margin:5px 0;" id="name">FIT-ME-RIGHT-TEES</h3>
+                    <span style="text-decoration:line-through;">Rs. 1.999</span><span>Rs.999</Rs></span>
+                    <div>
+                        <input style="border:5px solid blue;" type="radio" name="color"/>
+                        <input type="radio" name="color"/>
+                        <input type="radio" name="color"/>
+                    </div>
+                    <select style="width:100%; margin-top:20px;">
+                        <option>XS-elene</option>
+                        <option>S-elene</option>
+                        <option>M-ala</option>
+                        <option>L-una</option>
+                        <option>XL-una</option>
+                        <option>XXL-una</option>
+                        <option>XXXL-una</option>
+                    </select>
+
+                    <button style="background-color: black; color:white; margin-top:10px;">ADD</button>
+                </div>
+                
+            </div>
+
+            <div style="display:flex; margin-right: 20px; flex-shrink: 0;" class="cart_item">
+                <div>
+                    <img id="you_may_also_like_image" src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/premium_tee_-_xl__03_pear_orchid_bloom_720x.jpg?v=1664264789">
+                </div>
+                <div style="margin-left:20px;flex-shrink: 0;" id="right_side_cart_item_div">
+                    <h3 style="margin:5px 0;" id="name">FIT-ME-RIGHT-TEES</h3>
+                    <span style="text-decoration:line-through;">Rs. 1.999</span><span>Rs.999</Rs></span>
+                    <div>
+                        <input type="radio" name="color"/>
+                        <input type="radio" name="color"/>
+                        <input type="radio" name="color"/>
+                    </div>
+                    <select style="width:100%; margin-top:20px;">
+                        <option>XS-elene</option>
+                        <option>S-elene</option>
+                        <option>M-ala</option>
+                        <option>L-una</option>
+                        <option>XL-una</option>
+                        <option>XXL-una</option>
+                        <option>XXXL-una</option>
+                    </select>
+
+                    <button style="background-color: black; color:white; margin-top:10px;">ADD</button>
+                </div>
+                
+            </div>
+
+            <div style="display:flex; margin-right: 20px; flex-shrink: 0;" class="cart_item">
+                <div>
+                    <img id="you_may_also_like_image" src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/premium_tee_-_xl__03_pear_orchid_bloom_720x.jpg?v=1664264789">
+                </div>
+                <div style="margin-left:20px;flex-shrink: 0;" id="right_side_cart_item_div">
+                    <h3 style="margin:5px 0;" id="name">FIT-ME-RIGHT-TEES</h3>
+                    <span style="text-decoration:line-through;">Rs. 1.999</span><span>Rs.999</Rs></span>
+                    <div>
+                        <input type="radio" name="color"/>
+                        <input type="radio" name="color"/>
+                        <input type="radio" name="color"/>
+                    </div>
+                    <select style="width:100%; margin-top:20px;">
+                        <option>XS-elene</option>
+                        <option>S-elene</option>
+                        <option>M-ala</option>
+                        <option>L-una</option>
+                        <option>XL-una</option>
+                        <option>XXL-una</option>
+                        <option>XXXL-una</option>
+                    </select>
+
+                    <button style="background-color: black; color:white; margin-top:10px;">ADD</button>
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+    
+        <p id="blisscoins_line">You will earn 2348 BlissCoins worth Rs. 234.80 on this purchase.</p>
+    
+        <div style="display:flex;" id="price_container">
+    
+            <div style="width:50%;" id="contains_mrp_text">
+                <p>MRP</p>
+            </div>
+    
+            <div style="width:50%; justify-content: flex-end; display: flex;" id="contains_price_in_numbers">
+                <p >Rs. 3,298</p>
+            </div>
+    
+        </div>
+    
+        <div style="display:flex;" id="price_container">
+    
+            <div style="width:50%;" id="contains_mrp_text">
+                <p>YOU SAVE</p>
+            </div>
+    
+            <div style="width:50%; justify-content: flex-end; display: flex;" id="contains_price_in_numbers">
+                <p >Rs. 950</p>
+            </div>
+    
+        </div>
+    
+        <hr>
+    
+        <div style="display:flex;" id="price_container">
+    
+            <div style="width:50%;" id="contains_mrp_text">
+                <p>YOU SAVE</p>
+            </div>
+    
+            <div style="width:50%; justify-content: flex-end; display: flex;" id="contains_price_in_numbers">
+                <p >Rs. 2,348</p>
+            </div>
+    
+        </div>
+    
+        <button style="width:100%; padding-top:10px; padding-bottom:10px; background-color:black; color:white;">Checkout</button>
+        
+        <p id="blisscoins_line">Free shipping, cash on delivery, free exchanges and returns</p>
+    
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    function go_right(){
+        console.log("go right");
+        document.querySelector("#custom").scrollLeft += 40;
+    }
+
+    function go_left(){
+        document.querySelector("#custom").scrollLeft += -40;
+        
+    }
+
+
+
+    function minimise_may_like(){
+        document.getElementById("you_may_also_like_items").style.display = "none";
+        document.getElementById("cart_items").style.height = "45vh";
+        document.getElementById("plus_mark_for_adding_product").path
+    }
+</script>
