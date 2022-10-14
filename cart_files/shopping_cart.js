@@ -62,6 +62,7 @@
             <a class="product_name" href="${item_url}">${item_name}</a>
             <p class="product_color_and_size"> ${item_color_plus_size} </p>
             <span class="product_price" >Rs. <span id="${item_unit_price_id}" >${item_price_string}</span> </span>
+            
         </div>
     </div>
 
@@ -244,7 +245,8 @@
         element.remove();
     }
 
-    function add_commas_to_price_string(str){
+    function add_commas_to_price_string(stri){
+        var str = "" + stri;
         var new_str = "";
         console.log(str);
         if(str.length>3){
@@ -270,7 +272,8 @@
         }
     }
 
-    function remove_commas_from_price_string(str){
+    function remove_commas_from_price_string(stri){
+        var str = "" + stri;
         var new_str = "";
 
         for(var ind = str.length - 1; ind>=0; ind--){
