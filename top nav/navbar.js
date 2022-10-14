@@ -2,13 +2,14 @@ import {navBar} from "../top nav/nav-bar-exp.js";
 import {topNavBar} from "../top nav/nav-bar-exp.js";
 document.getElementById("side-nav-Modal").innerHTML=navBar();
 document.getElementById("section-header").innerHTML=topNavBar();
-console.log(navBar);
+// console.log(navBar);
 
 
 
 document.querySelector("#side-header-menu-button").addEventListener("click",openSideNavBar);
 
 function openSideNavBar(){
+    console.log("lol");
     document.getElementById("side-nav-outer-box").style.transform = "translatex(0%)";
     document.getElementById("side-nav-Modal").style.zIndex = "75";
 
