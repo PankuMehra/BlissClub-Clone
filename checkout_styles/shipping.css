@@ -41,13 +41,14 @@
     accent-color: white;
     border: none;
 }
-.shippind_radio_maindiv{
+.shipping_radio_maindiv{
     width: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.shipping_method_rediobox3{
+.shipping_method_rediobox{
+    width: 80%;
     /* margin-top: 10px; */
 }
 .shipping_charge{
@@ -104,4 +105,10 @@ margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     
+}
+
+.shipping_adress_change{
+    color: #f99584;
+    font-size: 1em;
+    text-decoration: none;
 }

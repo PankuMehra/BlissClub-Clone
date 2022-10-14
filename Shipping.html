@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <link
     rel="icon"
     href="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Vert_peach_black_font_insta_1_96x.png?v=1614294699"
@@ -12,6 +14,7 @@
   />
   <link rel="stylesheet" href="./checkout_styles/checkout.css">
   <link rel="stylesheet" href="./checkout_styles/shipping.css">
+  <link rel="stylesheet" href="./checkout_styles/flush-style.css">
    
 </head>
 <body id="checkout_body">
@@ -19,31 +22,113 @@
       <div class="checkout_nav_div1"><a href=""><img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/logo_180x_2x_ede3918f-6d55-4630-a3cd-e33ecf12b1b2.png?20248" alt="checkout_nav_logo"></a></div>
   </div>
 
+
+
+
+
+
+
+
+  
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button    id="flush_cart_button"  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <div class="shippind_radio_maindiv1">
+                <!-- <div class="shippingradio"><input type="radio" class="shipping_method_rediobox2 "  ::after></div> -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+
+
+                 
+                  
+
+
+              <span class="shipping_method_rediobox4"> Show order summary</span>
+
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+              </svg>
+
+            </div>
+
+            
+        </button>
+        
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+        
+            <div id="checkout_mid_hidden">
+
+
+
+
+ 
+
+
+                 
+            </div>
+        
+        </div>
+        
+      </div>
+    </div>
+     
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
   <div id="checkout_mid_page">
       <div class="checkout_mid1">
           <div class="checkoutmid_p1">
               <div class="checkout_bp1">
                   <ol>
-                      <li><a class="checkout_carticon"href="">cart</a></li>
+                      <li><a class="checkout_carticon"href="">Cart</a></li>
                    <li><img class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2735/2735071.png" alt=""></li>
                    <li><a class="checkout_carticon" href="./checkout.html">Information</a></li>
                    <li><img class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2735/2735071.png" alt=""></li>
-                   <li><span class="checkout_shipping">Shipping</span></li>
+                   <li><span class="checkout_shipping1">Shipping</span></li>
                    <li><img class="checkout_icon_imgr" src="https://cdn-icons-png.flaticon.com/128/2735/2735071.png" alt=""></li>
                    <li><span class="checkout_shipping">Payment</span></li>
                   </ol>
               </div>
               <div class="checkout_bp2">
                 <div class="checkout_adress_div">
-                  
+                  <div class="checkout_contact_email">
+                    <span class="shipping_emailid">Contact</span>
+                       <span class="shipping_email"></span>
+                       <a href="./checkout.html" class="shipping_adress_change">Change</a>
+                  </div>
+                  <div class="checkout_contact_adress">
+                    <span class="shipping_adress_r1">Adress</span>
+                        <span class="shipping_adress"></span>
+                        <a href="./checkout.html" class="shipping_adress_change">Change</a>
+                  </div>
                 </div>
                 <div class="shipping_method_heading">
                   <span class="shipping_method_heading1">Shipping Method</span>
                 </div>
                 <div class="shipping_method_radiobox">
                   <div class="shipping_method_rediobox1">
-                    <div class="shippind_radio_maindiv">
-                      <div class="shippingradio"><input type="radio" class="shipping_method_rediobox2 "  ::after></div>
+                    <div class="shipping_radio_maindiv">
+                      <!-- <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alexa" viewBox="0 0 16 16">
+                        <path d="M7.996 0A7.998 7.998 0 0 0 0 8a8 8 0 0 0 6.93 7.93v-1.613a1.06 1.06 0 0 0-.717-1.008A5.602 5.602 0 0 1 2.4 7.865 5.579 5.579 0 0 1 8.054 2.4a5.599 5.599 0 0 1 5.535 5.81l-.002.046a6.116 6.116 0 0 1-.012.192l-.005.061a4.85 4.85 0 0 1-.033.284l-.01.068c-.685 4.516-6.564 7.054-6.596 7.068A7.998 7.998 0 0 0 15.992 8 7.998 7.998 0 0 0 7.996.001Z"/>
+                      </svg></div> -->
+                      <div class="shippingradio"><input type="radio" class="shipping_method_rediobox2 "  ></div>
                     <span class="shipping_method_rediobox3">Prepaid</span>
                   </div>
                   <h4 class="shipping_charge">Free</h4>
@@ -65,17 +150,25 @@
           </div>
       </div>
 
+       <!-- <select name="" id="bliss_coin_selector" class="checkout_gift_coupan_input1">
+        <option value="100">₹100 off (1000 Points)</option>
+        <option value="200">₹200 off (2000 Points)</option>
+        <option value="300">₹300 off (3000 Points)</option>
+        <option value="400">₹400 off (4000 Points)</option>
+        <option value="500">₹500 off (5000 Points)</option>
+       </select> -->
 
 
 
 
-
-      <div class="checkout_mid2">
+      <div class="checkout_mid2" id="checkout_mid2">
         
     </div>
 </div>
   <!-- </div> -->
     
-  <script src="./scripts/shipping.js" type="module" ></script>
+  
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="./scripts/shipping.js" type="module" ></script>
