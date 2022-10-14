@@ -6,13 +6,12 @@ body{
   position: relative;
 }
 #side-nav-Modal{
-  /* width: 100%;
+  width: 100%;
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.413);
   z-index: 49;
-  transition: z-index 500ms;  */
-  background-color: #313030;
+  transition: z-index 500ms; 
 }
 #side-nav-outer-box {
   /* border: 20px solid yellow; */

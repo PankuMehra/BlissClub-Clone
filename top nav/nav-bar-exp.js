@@ -1,5 +1,5 @@
 let navBar = () => {
-  return `<div id="side-nav-outer-box">
+  return `
     <header class="side-nav-header">
     <button id="drawer-close-button">
       <ion-icon class="drawer-close-icon" name="close-sharp"></ion-icon>
@@ -131,8 +131,7 @@ let navBar = () => {
         </ul>
       </nav>
     </div>
-  </div>
-</div>`
+  </div>`
 };
 
 let topNavBar = () => {
