@@ -28,11 +28,13 @@
   cursor: pointer;
 }
 #home-top-banner-overlay {
+  /* display: block; */
   position: absolute;
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
+  /* overflow: hidden; */
 }
 #productList {
   display: grid;
@@ -50,10 +52,15 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+}
+#news-logo a{
+  width: 20%;
 }
 #news-logo img{
-    width: 335PX;
-    
+  width: 100%;
 }
 .content-box{
   margin: auto;
@@ -103,7 +110,7 @@
 .content{
   font-size: 18px;
   margin: auto;
-  width: 900px;
+  width: 100%;
   text-align: center;
 }
 .content >p{
@@ -135,13 +142,15 @@
 #home-social-div{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  column-gap: 10px;
+  gap: 10px;
+  padding: 0px 10px;
 }
 .home-social-inner-card{
   width: 100%;
   position: relative;
   /* border: solid green; */
   height: 370px;
+  overflow-y: hidden;
 }
 .home-social-inner-image{
   /* border: solid red; */
