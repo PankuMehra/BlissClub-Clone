@@ -100,18 +100,66 @@ function slidebar() {
 async function fetchData(url) {
   let res = await fetch(url);
   let data = await res.json();
-  console.log("data:", data);
   return data;
 }
 
 function displayData(data) {
+  // console.log("data:", data);
+  document.getElementById("all-Items-fetchedProducts").innerHTML = "";
   data.map(function (elem) {
-    document.getElementById("all-Items-fetchedProducts").innerHTML += `<div id="all-Items-item">
-    <img src="${elem.image_1}" alt="">
-    <h5>${elem.name}</h5>
-    <p>$${elem.price}</p>
-    </div>`;
+    let itemBox = document.createElement("div");
+    let imageAnchor = document.createElement("a");
+    let image = document.createElement("img");
+    let nameAnchor = document.createElement("a");
+    let name = document.createElement("h5");
+    let priceBox = document.createElement("div");
+    let price = document.createElement("p");
+    let strikedPrice = document.createElement("p");
+
+    imageAnchor.href = "./viewProduct.html";
+    image.src = elem.image1;
+    nameAnchor.href = "./viewProduct.html";
+    name.innerText = elem.name;
+    price.innerHTML = `Rs. ${elem.price1}`;
+    strikedPrice.innerHTML = `Rs. ${elem.price2}`;
+
+    itemBox.id = "all-Items-item";
+    priceBox.id = "all-Items-priceBox";
+    priceBox.append(strikedPrice, price);
+    imageAnchor.append(image);
+    nameAnchor.append(name);
+    itemBox.append(imageAnchor, nameAnchor, priceBox);
+
+    function setItemId() {
+      localStorage.setItem("productId", elem.id);
+    }
+    image.addEventListener("click", setItemId);
+    name.addEventListener("click", setItemId);
+
+    document.getElementById("all-Items-fetchedProducts").append(itemBox);
   });
 }
 
-export { slidebar, fetchData, displayData };
+//
+let x = 0;
+function sliderLeft(sliderId) {
+  x++;
+  if (x > 0) {
+    x = -3;
+  }
+  document.getElementById(`${sliderId}`).style.transform = `translateX(${
+    x * 13
+  }%)`;
+}
+
+function slideRight(sliderId) {
+  x--;
+  if (x < -3) {
+    x = 0;
+  }
+  document.getElementById(`${sliderId}`).style.transform = `translateX(${
+    x * 13
+  }%)`;
+}
+
+export { slidebar, fetchData, displayData, sliderLeft, slideRight };

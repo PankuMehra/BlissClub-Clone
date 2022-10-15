@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Product Review Page</title>
         <link rel="icon" href="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Vert_peach_black_font_insta_1_96x.png?v=1614294699" type="image/png"/>
-        <link rel="stylesheet" href="./viewProduct.css"/>
+        <link rel="stylesheet" href="./Styles/viewProduct.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/25408e8f65.js" crossorigin="anonymous"></script>
     </head>
@@ -14,31 +14,32 @@
     <body>
         <div id="view-product-Main-Body">
             <div id="view-product-sizeChartModalBox">
-                <iframe id="view-product-sizeChartModal" src="../sizeChartModal.html"></iframe>
+                <iframe id="view-product-sizeChartModal" src="./sizeChartModal.html"></iframe>
                 <button>
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
             <div id="view-product-sizeNameModalBox">
-                <iframe id="view-product-sizeNameModal" src="../sizeNameModal.html"></iframe>
+                <iframe id="view-product-sizeNameModal" src="./sizeNameModal.html"></iframe>
                 <button>
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
             <div id="view-product-product-Body">
                 <div
-                    class="view-product-LeftSideImages">
+                    id="view-product-LeftSideImages">
                     <!-- <div class=""> -->
                     <p id="view-product-sideText">You Might Also Like</p>
-                    <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Flare-Pants-Grape-Thumbnail_600x.jpg?v=1658502821" alt="rightsideimage 1"/>
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Flare-Pants-Grape-Thumbnail_600x.jpg?v=1658502821" alt="rightsideimage 1"/>
                     <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Flare-Pants-Olive-Thumbnail_600x.jpg?v=1658502778" alt="rightsideimage 2"/>
                     <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/cotton_leggings-Thumbnail-Brown_600x.jpg?v=1663916521" alt="rightsideimage 3"/>
                     <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCCSB-BlackThumbnail_600x.jpg?v=1654264370" alt="rightsideimage 4"/>
-                    <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Olive_TUL-Thumbnail-1_600x.jpg?v=1663938659" alt="rightsideimage 5"/>
+                    <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Olive_TUL-Thumbnail-1_600x.jpg?v=1663938659" alt="rightsideimage 5"/> -->
                 <!-- </div> -->
                 </div>
-                <div class="view-product-mainImageDiv">
-                    <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-Thumbnail-gowrigrey_8be3737a-0d28-4b27-bd34-c1fbd61ba012_600x.jpg?v=1647335756" alt="">
+                <div id="view-product-mainImageDiv">
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-Thumbnail-gowrigrey_8be3737a-0d28-4b27-bd34-c1fbd61ba012_600x.jpg?v=1647335756" alt=""> -->
+                    
                 </div>
                 <div class="view-product-itemDetails">
                     <h1 id="view-product-itemName">The Ultimate Leggings</h1>
@@ -98,6 +99,6 @@
                 </div>
             </div>
         </div>
-        <script src="./viewProduct.js"></script>
+        <script type="module" src="./Scripts/viewProduct.js"></script>
     </body>
 </html>
