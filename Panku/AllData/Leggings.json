@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-back_600x.jpg?v=1631622381",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/FlarePants_BlissBlack-Thumbnail-ALT_4_600x.jpg?v=1650430223",
+    "name": "The Ultimate Leggings",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 2,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul_r_s_2_737daecf-01b4-4870-8e87-78eda66a813e_600x.jpg?v=1658322091",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul_r_m_1_1d2458df-de3e-4199-8abb-9e4bc492da20_600x.jpg?v=1658322091",
+    "name": "The Ultimate Leggings - Richa Rust",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 3,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-5_600x.jpg?v=1653312323",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUL-Thumbnail-Brown_7f2ba621-bd0f-4c5e-ad74-04a57b32a198_600x.jpg?v=1653410252",
+    "name": "The Ultimate Leggings - New Launches",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 4,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tumml-black-2_600x.jpg?v=1643895665",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Maternity_Leggings_600x.jpg?v=1643891412",
+    "name": "The Ultimate MamaMove Leggings",
+    "price1": "Rs. 2,499.00",
+    "price2": "Rs. 3,149.00"
+  },
+  {
+    "id": 5,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/callout_greentul_xs_2_900x_20b722aa-cbc8-4fe2-8c8b-24b51584f334_600x.jpg?v=1658304158",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-xs-forest-1_900x_e1f3632a-cf23-4e87-bd27-cad3860a086b_600x.jpg?v=1658304158",
+    "name": "The Ultimate Leggings - Farah Forest",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 6,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul_g_xs_2_f2738ea5-b472-4bb4-ad16-69e3f730302d_600x.jpg?v=1658305383",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul_g_xs_1_3b780d09-70c6-4b02-9be7-523ca00d79af_600x.jpg?v=1658305383",
+    "name": "The Ultimate Leggings - Gargi Grape",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 7,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/10_600x.png?v=1622630300",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/9_600x.png?v=1622630299",
+    "name": "The Ultimate Leggings - Bliss Black",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 8,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-brown-xs-2_59c25bd6-6ca6-442d-ba56-7a07adeb0292_600x.jpg?v=1658292104",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-brown-xs-1_5e75c781-36f3-4f70-8301-591628762e30_600x.jpg?v=1658236895",
+    "name": "The Ultimate Leggings - Barkha Brown",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 9,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/cotton_leggings-black-closeop_drawcord_600x.jpg?v=1663859001",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/cotton_leggings-Thumbnail-Black_600x.jpg?v=1663916449",
+    "name": "Groove-In Cotton Leggings",
+    "price1": "Rs. 1,499.00",
+    "price2": "Rs. 1,899.00"
+  },
+  {
+    "id": 10,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul_gr_s_2_014af99e-25f1-4afe-92ec-cf77c760a11c_600x.jpg?v=1658311280",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul_gr_s_1_9fa85337-e851-4daf-963b-2cf18d401f01_600x.jpg?v=1658311280",
+    "name": "The Ultimate Leggings - Gowri Grey",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 11,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tupgl-black-3_600x.jpg?v=1652970431",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUPGL-Thumbnail-Black_600x.jpg?v=1653051241",
+    "name": "The Ultimate Pocket Goals Leggings",
+    "price1": "Rs. 2,199.00",
+    "price2": "Rs. 2,899.00"
+  },
+  {
+    "id": 12,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/4_600x.jpg?v=1625825231",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Blissclubday12798_600x.jpg?v=1623908022",
+    "name": "The Ultimate Leggings - Bulbull Burgundy",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 13,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-blush-xs-2_b507eefd-4fc9-415f-9d2b-0816a269a760_600x.jpg?v=1658299815",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-blush-m-2_0bb79451-0a70-4520-85d2-53a86324ef8e_600x.jpg?v=1658299815",
+    "name": "The Ultimate Leggings - Dia Dusty Rose",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 14,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/callout_mauvetul_xs_2_3f93b65d-d97e-44de-b423-fa3131ba3f3e_600x.jpg?v=1658319458",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-xs-mauve-1_8dc8ca9e-6a2a-48b8-a90e-f4081984fcc7_600x.jpg?v=1658319458",
+    "name": "The Ultimate Leggings - Monica Mauve",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 15,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/3_600x.jpg?v=1625825092",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Blissclubday12894_600x.jpg?v=1623912756",
+    "name": "The Ultimate Leggings - Naina Navy",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 16,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/2_88b2fb57-6505-4509-ae7f-80baed8a5f9c_600x.jpg?v=1631689903",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/1_790b6b81-aa49-42a6-828a-98ab12b7d533_600x.jpg?v=1631689903",
+    "name": "The Ultimate Leggings - Farah Forest",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 17,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Feature-2_f21f6bd6-037c-4775-9664-3b7221b3bfc5_600x.jpg?v=1631689453",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Feature-1_0396ca4f-4eb0-430b-ab3e-895eee423b45_600x.jpg?v=1631689453",
+    "name": "The Ultimate Leggings - Monica Mauve",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 18,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-2_900x_2d737be6-e42f-4ca7-b207-7be61f92bca0_600x.jpg?v=1658314157",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-s-moonstone-1_900x_1_600x.jpg?v=1658314157",
+    "name": "The Ultimate Leggings - Maya Moonstone",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 19,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/sangria_tuls_s_2_7a6ae9e6-d41f-4328-8868-d79194024133_600x.jpg?v=1658236811",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/sangria_tuls_s_1a_85426187-17d0-4cf4-b050-07abc643f9c0_600x.jpg?v=1658236811",
+    "name": "The Ultimate Leggings - Sara Sangria",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 20,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-callout-2_900x_45db6824-a3d9-429c-9f33-84e1186923a5_600x.jpg?v=1658297919",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-xs-burgandy-1_900x_414b67f1-c105-4113-a80e-65b0f4ee2706_600x.jpg?v=1658297919",
+    "name": "The Ultimate Leggings - Bulbull Burgundy",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 21,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-callout-2_375c9f56-96e6-4c67-b843-5e4790ab616f_600x.jpg?v=1658320854",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-xs-navy-1_a8d34db3-6655-4656-b075-c1ff6a4bd948_600x.jpg?v=1658320854",
+    "name": "The Ultimate Leggings - Naina Navy",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 22,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-callout-2_34d29f38-7dff-4f5e-8318-fc65361dffc1_600x.jpg?v=1658296761",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/tul-xs-black-1_900x_d322ebd6-1fde-4fbd-bc75-bd80581154e5_600x.jpg?v=1658296761",
+    "name": "The Ultimate Leggings - Bliss Black",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 23,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Feature-2_d9628816-2172-44fe-bc58-1af1029fdaf2_600x.jpg?v=1631689768",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Feature-1_8e777b6c-1f4c-45d4-ba67-99b6b9841ef8_600x.jpg?v=1631689768",
+    "name": "The Ultimate Leggings - Maya Moonstone",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 24,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Features-2_58f610a1-f082-4d41-b70f-e3cbea16e748_600x.jpg?v=1631690179",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUC-Black_a997ab8a-76d0-4ad9-adb0-52ab0c38f1b2_600x.jpg?v=1636443898",
+    "name": "The Ultimate Capris- Bliss Black",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 25,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Features-2_dc583ced-8267-42b9-a7f3-9522f54fa957_600x.jpg?v=1631690694",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/XS-1_2_600x.jpg?v=1631789171",
+    "name": "The Ultimate Capris 27 inch- Naina Navy",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 26,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/XXL-2_600x.jpg?v=1631701227",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/XS-1_8676ca07-75c8-445f-8515-3375325451e0_600x.jpg?v=1631787833",
+    "name": "The Ultimate Capris - Sara Sangria",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 27,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/features-2_abaac216-e8ca-4405-97ce-ab4511d47ba2_600x.jpg?v=1631649425",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUC-Black_600x.jpg?v=1631874288",
+    "name": "The Ultimate Capris 24 inch length",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 28,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/mad_pants-black-xs3_600x.jpg?v=1662367036",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Thumbnail-Navy_600x.jpg?v=1663267176",
+    "name": "Move All Day Pants",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,399.00"
+  },
+  {
+    "id": 29,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/cotton_flare-black-closeup_back_pockets_600x.jpg?v=1663932278",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Cotton_Flare-Thumbnail-Black_600x.jpg?v=1663941923",
+    "name": "Groove-In Cotton Flare Pants - Regular and Tall",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,199.00"
+  },
+  {
+    "id": 30,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/features-2_36a1e876-8bd4-4822-ab95-3801b1d50530_600x.jpg?v=1631648558",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Collections-Thumbnail_TUCNavy_600x.jpg?v=1632133732",
+    "name": "The Ultimate Capris 27 inch length",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 31,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/navybluetshirt2_600x.jpg?v=1636446427",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Thumbnail-Bestee-Black_600x.jpg?v=1636544891",
+    "name": "Bes-Tee",
+    "price1": "Rs. 599.00",
+    "price2": "Rs. 1,199.00"
+  },
+  {
+    "id": 32,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/flare-pants-callouts_black-xs6_600x.jpg?v=1640064190",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/FlarePants_BlissBlack-Thumbnail_600x.jpg?v=1640069924",
+    "name": "The Ultimate Flare Pants - Regular and Tall",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 33,
+    "category": "leggings",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCSB_BulbullBurgundy-Thumbnail_600x.jpg?v=1637662576",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCSB_BlissBlack-Thumbnail_600x.jpg?v=1637662575",
+    "name": "The Ultimate Comfort Sports Bra",
+    "price1": "Rs. 1,799.00",
+    "price2": "Rs. 2,299.00"
+  }
+]

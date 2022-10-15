@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "category": "shorts",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/cycling-shorts_black-xs-3_600x.jpg?v=1639076256",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Thumbnail-Bottomwear-CyclingShorts-Black_600x.jpg?v=1639081236",
+    "ProductItem__Title": "The Ultimate Cycling Shorts",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 2,
+    "category": "shorts",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/shorties_black-xs-2_600x.jpg?v=1639078341",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Thumbnail-Bottomwear-Shorties-Black_600x.jpg?v=1639080992",
+    "ProductItem__Title 2": "The Ultimate Shorties",
+    "price1": "Rs. 1,799.00",
+    "price2": "Rs. 2,199.00"
+  },
+  {
+    "id": 3,
+    "category": "shorts",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/mad-shorts-black-xs-2_600x.jpg?v=1656420134",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/MAD-Shorts-Black-Thumbnail_600x.jpg?v=1656420972",
+    "ProductItem__Title 3": "Move All Day Shorts",
+    "price1": "Rs. 1,499.00",
+    "price2": "Rs. 1,799.00"
+  },
+  {
+    "id": 4,
+    "category": "shorts",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/navybluetshirt2_600x.jpg?v=1636446427",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Thumbnail-Bestee-Black_600x.jpg?v=1636544891",
+    "ProductItem__Title 4": "Bes-Tee",
+    "price1": "Rs. 599.00",
+    "price2": "Rs. 899.00"
+  }
+]

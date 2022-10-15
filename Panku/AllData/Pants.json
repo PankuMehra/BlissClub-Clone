@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/mad_pants-black-xs3_600x.jpg?v=1662367036",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Thumbnail-Navy_600x.jpg?v=1663267176",
+    "name": "Move All Day Pants",
+    "price1": "Rs. 1,899.00",
+    "price2": "Rs. 2,399.00"
+  },
+  {
+    "id": 2,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/flare-pants-callouts_black-xs6_600x.jpg?v=1640064190",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/FlarePants_BlissBlack-Thumbnail_600x.jpg?v=1640069924",
+    "name": "The Ultimate Flare Pants - Regular and Tall",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 3,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-1_61610c8a-e975-4ee0-8462-02bc05e96475_600x.jpg?v=1661436393",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/OTGSP-Thumbnail-Navy_600x.jpg?v=1661437308",
+    "name": "On-The-Go Straight Pants",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,499.00"
+  },
+  {
+    "id": 4,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs2_600x.jpg?v=1661526528",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/HF-Thumbnail-1_600x.jpg?v=1661522813",
+    "name": "Werk-It Flare Pants - Regular and Tall",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,799.00"
+  },
+  {
+    "id": 5,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/cotton_flare-black-closeup_back_pockets_600x.jpg?v=1663932278",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/Cotton_Flare-Thumbnail-Black_600x.jpg?v=1663941923",
+    "name": "Groove-In Cotton Flare Pants - Regular and Tall",
+    "price1": "Rs. 1,699.00",
+    "price2": "Rs. 2,199.00"
+  },
+  {
+    "id": 6,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bf",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/flare-regular_black-s1_1260x_5346f3c1-e410-4eec-b1f8-9255716cf067_600x.jpg?v=1665473824",
+    "name": "The Ultimate Flare Pants - Regular and Tall",
+    "price1": "Rs. 1,999.00",
+    "price2": ""
+  },
+  {
+    "id": 7,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/xs-back_600x.jpg?v=1631622381",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/FlarePants_BlissBlack-Thumbnail-ALT_4_600x.jpg?v=1650430223",
+    "name": "The Ultimate Leggings",
+    "price1": "Rs. 1,999.00",
+    "price2": "Rs. 2,299.00"
+  },
+  {
+    "id": 8,
+    "category": "pants",
+    "image1": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCSB_BulbullBurgundy-Thumbnail_600x.jpg?v=1637662576",
+    "image2": "https://cdn.shopify.com/s/files/1/0404/0196/1115/products/TUCSB_BlissBlack-Thumbnail_600x.jpg?v=1637662575",
+    "name": "The Ultimate Comfort Sports Bra",
+    "price1": "Rs. 1,799.00",
+    "price2": "Rs. 2,299.00"
+  }
+]
