@@ -1,10 +1,17 @@
+
+
 var arr = [];
 function signup() {
   event.preventDefault();
+  fname = document.getElementById("signup_firstName").value;
+  lname = document.getElementById("signup_lastName").value;
+  email = document.getElementById("signup_email").value;
+  password = document.getElementById("signup_pass").value;
   var user = {
-    name: document.getElementById("signup_firstName").value + document.getElementById("signup_lastName").value ,
-    email: document.getElementById("signup_email").value,
-    password: document.getElementById("signup_pass").value,
+    fname: fname,
+    lname: lname,
+    email: email, 
+    password: password,
   };
   arr.push(user);
   
