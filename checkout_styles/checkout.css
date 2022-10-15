@@ -498,7 +498,10 @@ td{
     border-spacing: 0;
 } */
 
-
+.count_bliss_coin{
+    color: #737373;
+    margin-top: 20px;
+}
 
 
 
@@ -518,9 +521,16 @@ td{
 
   } */
 @media (min-width: 1000px){
-    #checkout_mid_page {
+    /* #checkout_mid_page {
   
+} */
+.checkout_mid_hidden{
+    display: none;
 }
+#accordionFlushExample{
+    display: none;
+}
+
 
 
 
@@ -555,38 +565,19 @@ td{
         .checkout_mid2{
             display: none;
         }
-        /* .checkout_mid_hidden{
-            display: none;
-        } */
+        
 
         
 
 
 
 
-        /* body {
-            background: white;
-            } */
-            /* body {
-                word-wrap: break-word;
-                } */
+        
 
 
-
-/* #checkout_mid_page {
-  flex-direction: row;
-} */
-/* #checkout_mid_page {
-
-display: flex;
-flex-direction: row;
-flex-wrap: wrap-reverse;
-word-wrap: break-word;
-/* flex-wrap: wrap-reverse; */
-/* background: white; */
-/* } */ */
+ 
 .checkout_mid_hidden{
-    display: block;
+    display: none;
 }
 .shippingradio{
     display: none;

@@ -28,7 +28,7 @@ let checkout_cart = () => {
 </div>
 
 <div class="checkout_coupan_div5">
-<div><h2 class="count_bliss_coin">YOU HAVE 1000 BlissCoins</h2></div>
+<div><h3 class="count_bliss_coin">YOU HAVE 1000 BlissCoins</h3></div>
 <div class="checkout_coupan_div6">
 <select name="" id="bliss_coin_selector" class="checkout_gift_coupan_input5">
 <option value="0">Choose Reward</option>
