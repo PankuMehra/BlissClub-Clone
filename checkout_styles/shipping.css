@@ -1,0 +1,114 @@
+.shipping_method_heading{
+    height: 60px;
+    align-items: center;
+    margin-top: 30px;
+}
+.shipping_method_radiobox{
+    width: 100%;
+
+}
+
+.shipping_method_rediobox1{
+    width: 100%;
+    display: flex;
+    border: 1px solid #cbc5c1;
+    height: 60px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.shippingradio{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #f99584;
+    align-items: center;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+.shipping_method_rediobox2{
+    margin-top: 8px;
+    margin-left: 8px;
+    display: block;
+    accent-color: white;
+    border-color: #f99584;
+    
+}
+.shipping_method_rediobox2:checked::after{
+    accent-color: white;
+    border: none;
+}
+.shipping_radio_maindiv{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shipping_method_rediobox{
+    width: 80%;
+    /* margin-top: 10px; */
+}
+.shipping_charge{
+    margin-right: 10px;
+    color:#737373 ;
+}
+
+
+
+
+
+.checkout_adress_div{
+    width: 100%;
+    display: grid;
+    height: 100px;
+    border: 1px solid #cbc5c1;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.checkout_contact_email{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid #cbc5c1;
+}
+.checkout_contact_adress{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    
+}
+.shipping_emailid{
+    margin-bottom: 10px;
+    color: #737373;
+}
+.shipping_email{
+margin-bottom: 10px;
+}
+.shipping_adress_r1{
+    margin-bottom: 10px;
+    color: #737373;
+}
+.shipping_adress{
+    margin-bottom: 10px;
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.shipping_adress_change{
+    color: #f99584;
+    font-size: 1em;
+    text-decoration: none;
+}

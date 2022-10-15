@@ -1,0 +1,57 @@
+.checkout_shipping1{
+    color: #f99584;
+    font-size: 0.8571428571em;
+    text-decoration: none;
+}
+.checkout_adress_div1{
+    width: 100%;
+    display: grid;
+    height: 150px;
+    border: 1px solid #cbc5c1;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.checkout_contact_adress{
+    border-bottom: 1px solid #cbc5c1; 
+}
+.checkout_contact_adress1{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    
+    /* justify-content: space-between; */
+    margin: auto;
+    align-items: center;
+    /* border-bottom: 1px solid #cbc5c1; */
+}
+.shipping_adress1{
+    margin-left: 20px;
+    width: 30%;
+    display: flex;
+    margin-bottom: 10px;
+    /* align-items: center; */
+}
+#shipping_radio_maindiv4{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+.shipping_method_rediobox8{
+    width: 60%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.payment_billing_changed{
+    margin-top: 30px;
+}
+#revisit_adress{
+    border: 1px solid #f99584;
+}
+.payment_method_icon_p2{
+    display: grid;
+    
+}
+
+
+
