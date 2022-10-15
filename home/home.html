@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-    <link rel="stylesheet" href="./home.css" />
-    <link rel="stylesheet" href="../top nav/navbar.css" />
+
+    <link rel="stylesheet" href="/home/home.css" />
+    <link rel="stylesheet" href="/top nav/navbar.css" />
+    <link rel="stylesheet" href="/chatbot/style.css" />
   </head>
   <body>
     <div id="side-nav-Modal">
-        <!-- import the side nav here -->
+      <!-- import the side nav here -->
     </div>
     <header id="section-header">
       <!-- import top bar here -->
     </header>
+    <div id="chatbot-main">
+      <!-- import chatboat here -->
+    </div>
+    <div id="bot-opener">
+      <button id="message-us">Message us</button>
+    </div>
     <main id="home-main">
       <div id="home-top-banner">
         <div id="home-top-banner-overlay">
@@ -22,7 +30,7 @@
         </div>
         <img
           id="home-top-banner-image"
-          src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/1920x739_35__Off.jpg?v=1665296979"
+          src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Homepage_Desktop_Banner_2A_2.png?v=1651746304"
           alt=""
         />
       </div>
@@ -61,7 +69,7 @@
         </div>
         <div class="productList-innerDiv">
           <div class="productList-content">
-            <h3 class="productList-title">SHOP BOTTOMWEAR</h3>
+            <h3 class="productList-title">SHOP TOPWEAR</h3>
           </div>
           <a href="" class="productList-inner-image">
             <img
@@ -72,7 +80,7 @@
         </div>
         <div class="productList-innerDiv">
           <div class="productList-content">
-            <h3 class="productList-title">SHOP BOTTOMWEAR</h3>
+            <h3 class="productList-title">SHOP SPORTS BRAS</h3>
           </div>
           <a href="" class="productList-inner-image">
             <img
@@ -83,7 +91,7 @@
         </div>
         <div class="productList-innerDiv">
           <div class="productList-content">
-            <h3 class="productList-title">SHOP BOTTOMWEAR</h3>
+            <h3 class="productList-title">SHOP ALL</h3>
           </div>
           <a href="" class="productList-inner-image">
             <img
@@ -104,7 +112,9 @@
       <div>
         <div class="full-width-content">
           <div class="content-box">
-            <h2 class="title2">We’re spreading <span>Happiness</span></h2>
+            <h2 class="title2 center">
+              We’re spreading <span>Happiness</span>
+            </h2>
             <div class="content">
               <p>
                 Did you know, when you move, your body rewards you with a rush
@@ -153,14 +163,14 @@
       </div>
 
       <div id="galary">
-        <h2 class="title">Watch her<span>#MovingIt</span></h2>
+        <h2 class="title center">Watch her<span>#MovingIt</span></h2>
         <div id="galary-images"></div>
       </div>
 
       <div id="home-social-div">
         <div class="home-social-inner-card">
           <a href="" class="home-social-inner-image">
-            <img src="./images/insta.jpg"alt="" />
+            <img src="./images/insta.jpg" alt="" />
           </a>
         </div>
         <div class="home-social-inner-card">
@@ -202,8 +212,13 @@
     </main>
   </body>
 </html>
-<!-- <script src="./home.js" type="module"></script> -->
-<script src="../top nav/navbar.js" type="module"></script>
+<!-- script for chat bot -->
+<script type="text/javascript" src="../chatbot/index.js"></script>
+<script type="text/javascript" src="../chatbot/constants.js"></script>
+<script type="text/javascript" src="../chatbot/speech.js"></script>
+
+<script src="./home.js" type="module"></script>
+<script src="/top nav/navbar.js" type="module"></script>
 <script
   type="module"
   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
