@@ -94,13 +94,6 @@ body {
   margin-top: 25px;
   /* padding: 8px 15px; */
 }
-display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  height: 58px;
-  border-radius: 4px;
-  border: 2px solid gray;
 
 .link-primary {
   text-decoration: none;

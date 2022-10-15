@@ -83,7 +83,7 @@ let navBar = () => {
                 type="text"
                 placeholder="search our products"
               />
-              <button class="submit-search" type="submit">ee</button>
+              <button class="submit-search" id="side-submit-search" type="submit"></button>
             </form>
           </div>
         </nav>

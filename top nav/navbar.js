@@ -41,6 +41,17 @@ document.getElementById("top-search").addEventListener("keypress", (event) => {
   }
 });
 document.getElementById("submit-search").addEventListener("click", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   console.log(document.getElementById("top-search").value);
+});
+
+document.getElementById("side-search").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("side-submit-search").click();
+  }
+});
+document.getElementById("side-submit-search").addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log(document.getElementById("side-search").value);
 });
