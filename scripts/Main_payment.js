@@ -24,7 +24,7 @@ function expiracyDate() {
 }
 function sortCode() {
   var x = document.getElementById("sort").value;
-  document.getElementById("sortcode").innerHTML = "Sort Code" + " " + x;
+  document.getElementById("sortcode").innerHTML = "Amount: ₹" + " " + x;
 }
 function securityCode() {
   var x = document.getElementById("security").value;

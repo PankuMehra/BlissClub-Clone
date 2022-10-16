@@ -502,6 +502,10 @@ td{
     color: #737373;
     margin-top: 20px;
 }
+.checkout_apply_coupan_b{
+    cursor: pointer;
+}
+
 
 
 
@@ -527,7 +531,16 @@ td{
 .checkout_mid_hidden{
     display: none;
 }
-#accordionFlushExample{
+/* #accordionFlushExample{
+    display: none;
+} */
+#checkout_mid_hidden{
+    display: none;
+}
+#form_open_close_slider{
+    display: none;
+}
+#hidden_slider{
     display: none;
 }
 

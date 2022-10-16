@@ -1,4 +1,4 @@
-import { checkout_cart, checkout_cart1, displayitems, displayitems1} from "../checkout_components/checkout_cart.js";
+import { apply_coupan, checkout_cart, checkout_cart1,append_adress, displayitems, displayitems1} from "../checkout_components/checkout_cart.js";
 
 
 document.getElementById("checkout_mid2").innerHTML = checkout_cart();
@@ -12,7 +12,7 @@ document.querySelector("#checkout_mid_hidden").innerHTML = checkout_cart1();
 
 
 
-
+append_adress();
 
 class item {
     constructor(a, b, c, d) {
@@ -40,6 +40,8 @@ let allitem = JSON.parse(localStorage.getItem("allitems")) || [];
 displayitems(allitem);
 
  displayitems1(allitem);
+ apply_coupan();
+ 
 
 
 

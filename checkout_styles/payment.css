@@ -52,6 +52,44 @@
     display: grid;
     
 }
+#down_payment_form{
+    width: 100%;
+}
+#revisit_adress{
+    width: 100%;
+}
+#random_slide_down{
+    width: 100%;
+}
+#cod_shipping_method{
+    width: 30%;
+    justify-content: space-around;
+}
+#cod_div{
+    height: 30px;
+    /* background-color: black; */
+}
+/* .cash_on_delivery{
+    color: white;
+    text-decoration: none;
+} */
+#cod_div1{
+    width: 15%;
+    height: 30px;
+    background-color: #f99584;
+    align-items: center;
+    margin-right: 10px;
+    /* margin-left: 20px; */
+    
+}
+.cash_on_delivery1{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+.shipping_adress1{
+    margin-top: 18px;
+}
 
 
 
