@@ -27,17 +27,16 @@ Developed BlissClub-Clone website collaboratively with 5 team members mentioned 
 
 
 ## Contributors with their contribution:
-1. [Ashwini Bhoskar](https://github.com/beashu77)
+
+1. [Sushant](https://github.com/Ravindra02Yadav)
+  HomePage ,head navbar,side navbar
+
+2.[kajal Yadav](https://github.com/beashu77)
   Signin, login page
 
-2. [Saurav Behera](https://github.com/Sauravbubu)
-  Job Search, Job list page & backend part
-
-3. [Ravindra Yadav](https://github.com/Ravindra02Yadav)
-  HomePage , navbar
-
-4. [Gaurav Singh](https://github.com/GauravSinghh)
-  Job description page and job applied successfully.
+3. [Samrat](https://github.com/GauravSinghh)
+  
+    
 
 
 
