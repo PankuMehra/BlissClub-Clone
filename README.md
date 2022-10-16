@@ -29,22 +29,22 @@ Developed BlissClub-Clone website collaboratively with 5 team members mentioned 
 ## Contributors with their contribution:
 
 1. [Sushant](https://github.com/Ravindra02Yadav)
-  HomePage ,head navbar,side navbar
+  HomePage ,head navbar,side navbar,Chatbot
 
 2.[kajal Yadav](https://github.com/beashu77)
   Signin, login page
 
 3. [Samrat](https://github.com/GauravSinghh)
-  
-    
+     Information page,Shipping page, payment page
+4.[Pankaj Mehra]()
 
 
 
 ## Home page:
-![image](https://user-images.githubusercontent.com/101568403/185433635-7306eef1-67cd-4b0e-9fe5-05e30bd45a1f.png)
+![image](https://github.com/PankuMehra/BlissClub-Clone/tree/footer/blog%20images%20url)
 
 ## Registeration Page:
-![image](https://user-images.githubusercontent.com/101568403/185433768-354b72d3-3d02-4466-8870-a6e95509ed02.png)
+![image]()
 
 ## Sign in:
 ![image](https://user-images.githubusercontent.com/101568403/185433924-c3073139-d885-426e-903a-d1ce3b6edd67.png)
