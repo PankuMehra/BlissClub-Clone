@@ -41,6 +41,11 @@ Developed BlissClub-Clone website collaboratively with 5 team members mentioned 
 
 
 ## Home page:
+
+
+Try this markdown:
+
+![alt text](http://url/to/img.png)
 ![image](https://github.com/PankuMehra/BlissClub-Clone/tree/footer/blog%20images%20url)
 
 ## Registeration Page:
