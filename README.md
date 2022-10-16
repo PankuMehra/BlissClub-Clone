@@ -1,6 +1,6 @@
 # BlissClub-Clone
 
-Developed BlissClub-Clone website collaboratively with 5 team members mentioned in the contributors list. Here, you can apply for your dream job and do  all the functionality of the site.
+Developed BlissClub-Clone website collaboratively with 5 team members mentioned in the contributors list. 
 
 ## Features:
 1. Easy login and logout.
