@@ -38,15 +38,8 @@ Developed BlissClub-Clone website collaboratively with 5 team members mentioned 
      Information page,Shipping page, payment page
 4.[Pankaj Mehra]()
 
-
-
-## Home page:
-
-
-Try this markdown:
-
-![alt text](http://url/to/img.png)
-![image](https://github.com/PankuMehra/BlissClub-Clone/tree/footer/blog%20images%20url)
+ ## Home page:
+![image](https://github.com/PankuMehra/BlissClub-Clone/blob/footer/blog%20images%20url/2022-10-16.png)
 
 ## Registeration Page:
 ![image]()
