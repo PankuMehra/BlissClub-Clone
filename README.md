@@ -36,7 +36,8 @@ Developed BlissClub-Clone website collaboratively with 5 team members mentioned 
 
 3. [Samrat](https://github.com/samrat124)
      Information page,Shipping page, payment page
-4.[Pankaj Mehra]()
+     
+4.[Pankaj Mehra](https://github.com/PankuMehra)
 
  ## Home page:
 ![image](https://github.com/PankuMehra/BlissClub-Clone/blob/footer/blog%20images%20url/2022-10-16.png)
