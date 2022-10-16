@@ -155,7 +155,9 @@
           </div>
           <p class="pwrite" id="expire">Expiracy Date</p>
           <p class="pwrite" id="cardname" style="margin-top: -10px;">Card Holder</p>
-          <p class="pwrite" id="sortcode" style="margin-top: -10px;">Sort Code</p>
+          <p class="pwrite" id="sortcode" style="margin-top: -10px;">Amount: ₹ </p>
+          <!-- <input type="number" class="pwrite" id="sortcode" style="margin-top: -10px;" placeholder="Amount"> -->
+          
         </div>
         <br>
 
@@ -202,7 +204,7 @@
       <label>Expiracy Date:</label>
       <input type="text" id="exdate" onchange="expiracyDate()">
       <br>
-      <label>Sort Code:</label>
+      <label>Amount: ₹</label>
       <input type="text" id="sort" onchange="sortCode()">
       <label>Card Type:</label>
       <i class="fa fa-cc-visa" id="fa-fa-cc-visa1" onclick="closeIcons(); openIconOne();"></i>
