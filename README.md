@@ -28,13 +28,13 @@ Developed BlissClub-Clone website collaboratively with 5 team members mentioned 
 
 ## Contributors with their contribution:
 
-1. [Sushant](https://github.com/Ravindra02Yadav)
+1. [Sushant](https://github.com/sushantnegee)
   HomePage ,head navbar,side navbar,Chatbot
 
-2.[kajal Yadav](https://github.com/beashu77)
-  Signin, login page
+2.[kajal Yadav](https://github.com/kajalyadavgithub)
+  Signin, login page,footer
 
-3. [Samrat](https://github.com/GauravSinghh)
+3. [Samrat](https://github.com/samrat124)
      Information page,Shipping page, payment page
 4.[Pankaj Mehra]()
 
