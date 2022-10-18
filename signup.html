@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Signup</title>
+    <link
+      rel="icon"
+      href="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Vert_peach_black_font_insta_1_96x.png?v=1614294699"
+      type="image/png"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/25408e8f65.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/signup.css" />
+  </head>
+  <body>
+    <header id="section-header">
+      <!-- import top bar here -->
+    </header>
+    <div id="successfullBox">
+      <div id="successfullAlert"></div>
+    </div>
+    <div id="login-Body">
+      <div id="card">
+        <div id="signup-top">
+          <h1 id="login-heading">Register</h1>
+          <p id="login-headingDetails">Please Fill the information below</p>
+        </div>
+        <form action="" id="login-form">
+          <input
+            type="text"
+            id="signup_firstName"
+            class="lb"
+            placeholder="First Name"
+          /><br />
+          <br />
+          <input
+            type="text"
+            id="signup_lastName"
+            class="lb"
+            placeholder="Last Name"
+          /><br />
+          <br />
+          <input
+            type="text"
+            id="signup_email"
+            class="lb"
+            placeholder="Email"
+          /><br />
+          <br />
+          <input
+            type="password"
+            id="signup_pass"
+            class="lb"
+            placeholder="Password "
+          /><br />
+
+          <button class="hbtn hb-fill-right" id="signup-button">
+            Register
+          </button>
+        </form>
+        <p id="login-NotRegistered">
+          Already Registered ? <a href="./login.html">Log-in</a>
+        </p>
+      </div>
+    </div>
+    <footer id="myFooter" id="foot">
+      <!-- import footer here -->
+    </footer>
+  </body>
+</html>
+<script type="module" src="./Scripts/signup.js"></script>
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>

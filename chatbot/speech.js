@@ -6,7 +6,7 @@ const textToSpeech = (string) => {
   document.getElementById("sound").addEventListener("click",()=>{
    if(flag == true){
     flag = false;
-    document.getElementById("sound").innerHTML = `<ion-icon class="sound-icon" name="volume-mute-outline"></ion-icon>`
+    document.getElementById("sound").innerHTML = `<ion-icon class="sound-icon" name="volume-high-outline">`
     let voice = new SpeechSynthesisUtterance(string);
     voice.text = string;
     voice.lang = "en-US";
@@ -14,9 +14,9 @@ const textToSpeech = (string) => {
     voice.rate = 1.4;
     voice.pitch = 1; // Can be 0, 1, or 2
     synth.speak(voice);
-   }else{
+  }else{
     flag = true;
-    document.getElementById("sound").innerHTML = `<ion-icon class="sound-icon" name="volume-high-outline">`
+    document.getElementById("sound").innerHTML = `<ion-icon class="sound-icon" name="volume-mute-outline"></ion-icon>`
     let voice = new SpeechSynthesisUtterance(string);
     voice.text = "";
     voice.lang = "en-US";
