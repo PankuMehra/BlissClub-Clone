@@ -12,7 +12,7 @@ let chatbot = ()=>{
       </div>
     </div>
     <div id="side-icons">
-      <button id="sound"><ion-icon class="sound-icon" name="volume-high-outline"></ion-icon></button>
+      <button id="sound"><ion-icon class="sound-icon" name="volume-mute-outline"></ion-icon></button>
     <button id="close-button">close</button>
     </div>
   </div>

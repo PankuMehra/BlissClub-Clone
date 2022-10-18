@@ -53,34 +53,28 @@ function openIconFour() {
   document.getElementById("cardType").innerHTML = "Discover";
 }
 
-
-
-
-
-
-
-
 let pay_button = document.getElementById("payment_process_btn");
 const debounce = (func, delay) => {
-    let debounceTimer
-    return function() {
-        const context = this
-        const args = arguments
-            clearTimeout(debounceTimer)
-                debounceTimer
-            = setTimeout(() => func.apply(context, args), delay)
-    }
-} 
-let btn_img=document.createElement("img");
-btn_img.src="http://38.media.tumblr.com/578d2dd48a0a53e54e7e05de6043155c/tumblr_nrlr6tulGV1r2geqjo1_540.gif"
-pay_button.addEventListener('click', debounce(function() {
-        alert("Payment Successful")
+  let debounceTimer;
+  return function () {
+    const context = this;
+    const args = arguments;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+  };
+};
+let btn_img = document.createElement("img");
+btn_img.src =
+  "http://38.media.tumblr.com/578d2dd48a0a53e54e7e05de6043155c/tumblr_nrlr6tulGV1r2geqjo1_540.gif";
+pay_button.addEventListener(
+  "click",
+  debounce(function () {
+    alert("Payment Successful");
 
-          window.location.href="..\Thank_you.html"
-                        }, 3000));
-
-
+    window.location.href = "./Thank_you.html";
+  }, 2000)
+);
 
 // const thankyou_page=(func,delay)=>{
-  
+
 // }
