@@ -90,7 +90,7 @@ let navBar = () => {
           <hr class="side-nav-hr" />
           <ul class="linked-list">
             <li class="linked-list-item">
-              <a class="sideNavFooterText side-nav-text-font-family" href=""
+              <a class="sideNavFooterText side-nav-text-font-family" href="./login.html"
                 >Login / Create Account</a
               >
             </li>
