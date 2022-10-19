@@ -44,13 +44,13 @@ let checkout_cart = () => {
 
 
 <div class="checkout_coupan_div">
-    <input type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
-    <button id="checkout_apply_coupan_b" class="checkout_apply_coupan_b">Apply</button>
+    <input type="text" class="checkout_gift_coupan_input" id="couponInput1" placeholder="Gift card or discount code">
+    <button id="checkoutCouponButton1" class="checkout_apply_coupan_b">Apply</button>
 </div>
 <div class="checkout_cart_price111">
 <div class="checkout_cart_total">
     <span>Subtotal</span>
-    <div class="checkout_cart_subtotal_price"></div>
+    <div class="checkout_cart_subtotal_price" id="couponSubtotal1"></div>
 </div>
 
 <div class="checkout_shipping_total">
@@ -63,7 +63,7 @@ let checkout_cart = () => {
 <div class="checkout_cart_total">
 <div class="checkout_price_div11"><span>Total</span>
 <p class="checkout_tax_p"></p></div>
-<span id="total_price_span" class="checkout_cart_total_price">
+<span id="total_price_span1" class="checkout_cart_total_price">
 
 </span>
 </div>
@@ -72,7 +72,7 @@ let checkout_cart = () => {
 // export {checkout_cart};
 
 let apply_coupan=()=>{
-  console.log(1000);
+  // console.log(1000);
   document.querySelector(".checkout_apply_coupan_b").addEventListener("click",()=>{
   // let coupan_applied=()=>{
     // event.preventDefault();
@@ -80,11 +80,11 @@ let apply_coupan=()=>{
       if(coupon=="BLISS20"){
        let total= document.querySelector(".checkout_cart_total_price").value;
        let rest=(total-(total/5));
-       console.log(1000);
+      //  console.log(1000);
        document.querySelector(".checkout_cart_total_price").innerText=rest;
       }
       else{
-        console.log("not running");
+        // console.log("not running");
       }
     // })
     // return coupan_applied();
@@ -140,16 +140,16 @@ let checkout_cart1 = () => {
     <button class="checkout_apply_coupan_b5">Apply</button>
     </div>
 </div>
-
-
 <div class="checkout_coupan_div">
-    <input type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
-    <button id="checkout_apply_coupan_b" class="checkout_apply_coupan_b">Apply</button>
+    <input type="text" class="checkout_gift_coupan_input" id="couponInput2" placeholder="Gift card or discount code">
+    <button id="checkoutCouponButton2" class="checkout_apply_coupan_b">Apply</button>
 </div>
 <div class="checkout_cart_price111">
 <div class="checkout_cart_total">
     <span>Subtotal</span>
-    <div class="checkout_cart_subtotal_price"></div>
+    <div class="checkout_cart_subtotal_price" id="couponSubtotal2">
+
+    </div>
 </div>
 
 <div class="checkout_shipping_total">
@@ -162,7 +162,7 @@ let checkout_cart1 = () => {
 <div class="checkout_cart_total">
 <div class="checkout_price_div11"><span>Total</span>
 <p class="checkout_tax_p"></p></div>
-<span id="total_price_span" /*class="checkout_cart_total_price"*/></span>
+<span id="total_price_span2" ></span>
 </div>
 </div>`
 }
@@ -193,7 +193,7 @@ function displayitems(allitem) {
     let td4 = document.createElement("td");
     let thumbdiv = document.createElement("div");
     let imagediv = document.createElement("div");
-    console.log(element);
+    // console.log(element);
     let itemdiv = document.createElement("div");
     itemdiv.setAttribute("id", "checkout_cart_itemdiv");
     let image = document.createElement("img");
@@ -214,8 +214,11 @@ function displayitems(allitem) {
     tr.append(td1, th2, td3, td4);
     document.querySelector("#tbody_mid2").append(tr);
   })
-  console.log(total_price ," lol");
-  document.getElementById("total_price_span").innerText =total_price;
+  // console.log(total_price ," lol");
+  document.getElementById("total_price_span1").innerText =total_price;
+  document.getElementById("total_price_span2").innerText =total_price;
+  document.getElementById("couponSubtotal1").innerText =total_price;
+  document.getElementById("couponSubtotal2").innerText =total_price;
 
 }
 
@@ -234,7 +237,7 @@ function displayitems1(allitem){
    let td4=document.createElement("td");
    let thumbdiv=document.createElement("div");
    let imagediv=document.createElement("div");
-   console.log(element);
+  //  console.log(element);
    let itemdiv=document.createElement("div");
    itemdiv.setAttribute("id","checkout_cart_itemdiv");
    let image=document.createElement("img");
@@ -255,7 +258,7 @@ function displayitems1(allitem){
    tr.append(td1,th2,td3,td4);
    document.querySelector("#tbody_items").append(tr);
   })
-  console.log(total_price);
+  // console.log(total_price);
   document.querySelector(".checkout_cart_total_price").innerText=total_price;
 
 }
