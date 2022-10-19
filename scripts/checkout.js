@@ -1,17 +1,15 @@
 import {
-  apply_coupan,
   checkout_cart,
   checkout_cart1,
-  append_adress,
   displayitems,
-  displayitems1,
+  displayitems1
 } from "../utils/checkout_cart.js";
 
 document.getElementById("checkout_mid2").innerHTML = checkout_cart();
 
 document.querySelector("#checkout_mid_hidden").innerHTML = checkout_cart1();
 
-append_adress();
+// append_adress();
 
 class item {
   constructor(a, b, c, d) {
@@ -42,16 +40,28 @@ let item3 = new item(
 );
 
 let allitems = [];
-
+console.log(item1);
 allitems.push(item1, item2, item3);
 localStorage.setItem("allitems", JSON.stringify(allitems));
 
-let allitem = JSON.parse(localStorage.getItem("allitems")) || [];
+let allitem = JSON.parse(localStorage.getItem("cart_items"))||[] ;
+console.log(allitem);
+// console.log("dskjfhdj");
 
+let currentUser = localStorage.getItem("Username") || "";
+console.log(currentUser)
+if (currentUser == "") {
+  document.querySelector(".checkout_login_coin").innerText = "Login to Redeem BlissCoins";
+  // document.querySelector(".checkout_info_c2 > span").innerText = "";
+} else {
+  document.querySelector(".checkout_info_c2 > span").innerText = "";
+  document.querySelector(".checkout_login_coin").innerText = currentUser + " ›";
+}
+ 
 displayitems(allitem);
 
 displayitems1(allitem);
-apply_coupan();
+// apply_coupan();
 
 class shipping_items {
   constructor(a, b, c, d, e, f, g, h, i, j) {
@@ -90,18 +100,7 @@ function collect_adress() {
   email_adress.push(email);
   let adress = [];
   adress.push(adressbag);
-  let all_shipping_items = new shipping_items(
-    email,
-    country,
-    first_name,
-    last_name,
-    adress1,
-    apartment,
-    city,
-    state,
-    pincode,
-    phone
-  );
+  let all_shipping_items = new shipping_items(email,country,first_name,last_name,adress1,apartment,city,state,pincode,phone);
   localStorage.setItem("email", JSON.stringify(email_adress));
   localStorage.setItem("adress", JSON.stringify(all_shipping_items));
   // window.location.href="./Shipping.html";
