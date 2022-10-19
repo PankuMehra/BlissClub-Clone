@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+  background:#eee;
+}
+
+.bgWhite{
+  background:#f99584;
+  box-shadow:0px 3px 6px 0px #cacaca;
+  width: 300px;
+  /* height: 150px; */
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.title{
+  font-weight:600;
+  margin-top:20px;
+  font-size:24px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.customBtn{
+  border-radius:0px;
+  padding:10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(162, 225, 67);
+}
+
+form input{
+  display:inline-block;
+  width:50px;
+  height:50px;
+  text-align:center;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  background-color: #fdc2b8;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4 text-center">
+              <div class="row">
+                <div class="col-sm-12 mt-5 bgWhite">
+                  <div class="title">
+                    Verify OTP
+                  </div>
+                  
+                  <form action="" class="mt-5">
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)'onkeyup='tabChange(4)' maxlength=1 >
+                  </form>
+                  <hr class="mt-4">
+                  <button class='btn btn-primary btn-block mt-4 mb-4 customBtn'>Verify</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
+<script>
+let digitValidate = function(ele){
+  console.log(ele.value);
+  ele.value = ele.value.replace(/[^0-9]/g,'');
+}
+
+let tabChange = function(val){
+    let ele = document.querySelectorAll('input');
+    if(ele[val-1].value != ''){
+      ele[val].focus()
+    }else if(ele[val-1].value == ''){
+      ele[val-2].focus()
+    }   
+ }
+
+
+</script>
