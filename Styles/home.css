@@ -32,6 +32,7 @@
   width: 130px;
   height: 40px;
   color: aliceblue;
+  background-color: black;
   cursor: pointer;
   border: 0px;
 }
@@ -202,6 +203,7 @@
     height: 45px;
     transition: 1s;
   }
+
   #home-top-banner-image {
     content: url("https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Homepage_Mobile_Banner_2.webp?v=1651730726");
   }
@@ -326,7 +328,7 @@
   width: 500px;
   height: 500px;
 }
-#couponBox{
+#coupenBox{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -345,12 +347,12 @@
   z-index: 200;
   background-color: #fde1dc;
   border-radius: 5px;
-  animation: couponAlert 1500ms 1 ease-in-out;
+  animation: coupenAlert 1500ms 1 ease-in-out;
   display: none;
   top: 100px;
   border: 6px solid rgb(219, 217, 217);
 }
-@keyframes couponAlert {
+@keyframes coupenAlert {
   0%{
     top: 0px;
     opacity: 0%;
@@ -362,17 +364,17 @@
     top: 100px;
   }
 }
-#couponText{
+#coupenText{
   color: #ff684d;
 }
-#couponCode{
+#coupenCode{
   /* width: 120px; */
   padding: 3px 10px;
   letter-spacing: 1.5px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.171);
 }
-#couponDone{
+#coupenDone{
   width: 100%;
   background-color: black;
   color: white;

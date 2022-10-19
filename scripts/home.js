@@ -52,33 +52,47 @@ document.getElementById("spin").addEventListener("click", () => {
     document.getElementById("coupen-popup").style.display = "flex";
     document.getElementById("spinner-div").style.display = "none";
     if(luckyNo == 0){
-      document.getElementById("couponCode").innerText = "bliss10"
+      document.getElementById("coupenCode").innerText = "bliss10"
     }else if(luckyNo == 1){
-      document.getElementById("couponCode").innerText = "bliss20"
+      document.getElementById("coupenCode").innerText = "bliss20"
     }else if(luckyNo == 2){
-      document.getElementById("couponCode").innerText = "bliss30"
+      document.getElementById("coupenCode").innerText = "bliss30"
     }else if(luckyNo == 3){
-      document.getElementById("couponCode").innerText = "bliss40"
+      document.getElementById("coupenCode").innerText = "bliss40"
     }else{
-      document.getElementById("couponCode").innerText = "try again later"
+      document.getElementById("coupenCode").innerText = "try again later"
     }
   },4000)
 });
+let coupens = JSON.parse(localStorage.getItem("coupens")) || [];
 
-document.getElementById("couponCode").addEventListener("click",()=>{
-  let copyText = document.getElementById("couponCode");
-  let input = document.createElement("input").value = copyText;
-  // Select the text field
-  input.select();
-  input.setSelectionRange(0, 99999); // For mobile devices
-
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(input.value);
-
-  // Alert the copied text
-  alert("Copied the text: " + input.value);
+document.getElementById("coupenCode").addEventListener("click",()=>{
+    var text = document.getElementById("coupenCode").innerText;
+    if(text!="try again later"){
+      var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+    let flag = false;
+    coupens.forEach(elem => {
+      if(elem == text){
+        flag = true;
+      }
+    });
+    if(flag == false){
+      coupens.push(text);
+      localStorage.setItem("coupens",JSON.stringify(coupens));
+      alert("text copied");
+    }else{
+      alert("coupen is already exist");
+    }
+    }else{
+      alert("only coupen code can be copied")
+    }
 })
-document.getElementById("couponDone").addEventListener("click", ()=>{
+document.getElementById("coupenDone").addEventListener("click", ()=>{
   document.getElementById("coupen-popup").style.display = "none";
 })
 document
