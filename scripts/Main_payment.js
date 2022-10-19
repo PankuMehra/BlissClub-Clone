@@ -1,3 +1,21 @@
+let items=JSON.parse(localStorage.getItem("allitems"))||[];
+  let total_amount=items.reduce((acc,ele)=>{
+
+    return acc+Number(ele.price);
+  },0)
+  console.log(total_amount);
+
+
+  let append_amount=()=>{
+    let amount_div=document.createElement("div");
+    let h3=document.createElement("h3");
+    h3.innerText=`Total Amount = Rs.${total_amount} /-`
+    amount_div.append(h3);
+    document.getElementById("total_amount_for_payment").append(amount_div);
+  }
+  append_amount();
+
+
 function cardName() {
   var x = document.getElementById("name").value;
   document.getElementById("cardname").innerHTML = x;
@@ -24,7 +42,9 @@ function expiracyDate() {
 }
 function sortCode() {
   var x = document.getElementById("sort").value;
-  document.getElementById("sortcode").innerHTML = "Amount: ₹" + " " + x;
+  // var x = document.getElementById("sort");
+  // x.placeholder.innerText=total_amount;
+  document.getElementById("sortcode").innerHTML = "Amount: ₹" + "" + x;
 }
 function securityCode() {
   var x = document.getElementById("security").value;
@@ -76,8 +96,19 @@ btn_img.src="http://38.media.tumblr.com/578d2dd48a0a53e54e7e05de6043155c/tumblr_
 pay_button.addEventListener('click', debounce(function() {
         alert("Payment Successful")
 
-          window.location.href="..\Thank_you.html"
+          window.location.href="./Thank_you.html"
                         }, 3000));
+
+
+
+
+  // let items=JSON.parse(localStorage.getItem("allitems"))||[];
+  // let total_amount=items.reduce((acc,ele)=>{
+
+  //   return acc+Number(ele.price);
+  // },0)
+  // console.log(total_amount);
+
 
 
 

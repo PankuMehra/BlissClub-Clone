@@ -505,6 +505,9 @@ td{
 .checkout_apply_coupan_b{
     cursor: pointer;
 }
+#checkout_apply_coupan_b:hover{
+background-color: red;
+}
 
 
 

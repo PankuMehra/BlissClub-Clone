@@ -1,4 +1,4 @@
-import { apply_coupan, checkout_cart, checkout_cart1,append_adress, displayitems, displayitems1} from "../checkout_components/checkout_cart.js";
+import {  checkout_cart, checkout_cart1,append_adress, displayitems, displayitems1} from "../checkout_components/checkout_cart.js";
 
 
 document.getElementById("checkout_mid2").innerHTML = checkout_cart();
@@ -40,7 +40,34 @@ let allitem = JSON.parse(localStorage.getItem("allitems")) || [];
 displayitems(allitem);
 
  displayitems1(allitem);
- apply_coupan();
+
+// document.getElementById("checkout_apply_coupan_b").addEventListener("click",apply_coupan)
+//  function apply_coupan(){
+//     // console.log(1000);
+//     // document.querySelector(".checkout_apply_coupan_b").addEventListener("click",()=>{
+//     // let coupan_applied=()=>{
+//     //   event.preventDefault();
+//       let coupon=document.querySelector("#checkout_gift_coupan_input").innerText;
+//       console.log(coupon);
+//         if(coupon=="BLISS20"){
+//          let total= document.querySelector(".checkout_cart_total_price").value;
+//          let rest=(total-(total/5));
+//          console.log(1000);
+//          document.querySelector(".checkout_cart_total_price").innerText=rest;
+//         }
+//         else{
+//           console.log("not running");
+//         }
+//     //   })
+//       // return coupan_applied();
+        
+  
+     
+    
+//   }
+
+
+//  apply_coupan();
  
 
 
@@ -90,3 +117,13 @@ function collect_adress() {
 
 }
 // collect_adress();
+
+document.getElementById("checkout_apply_coupan_b").addEventListener("click",apply_dis)
+function apply_dis(){
+let coupon_code=document.getElementById("checkout_gift_coupan_input").value;
+console.log(coupon_code);
+}
+apply_dis()
+
+
+

@@ -601,3 +601,9 @@ body {
    top: 0px;
    color:#fa0;
  }
+
+ #total_amount_for_payment{
+  height: 200px;
+  width: 60%;
+  margin: auto;
+ }

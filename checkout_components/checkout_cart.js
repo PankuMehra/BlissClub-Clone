@@ -44,8 +44,8 @@ let checkout_cart = () => {
 
 
 <div class="checkout_coupan_div">
-    <input onclick="apply_coupan" type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
-    <button class="checkout_apply_coupan_b">Apply</button>
+    <input  type="text"  id="checkout_gift_coupan_input" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
+    <button  id="checkout_apply_coupan_b" class="checkout_apply_coupan_b">Apply</button>
 </div>
 <div class="checkout_cart_price111">
 <div class="checkout_cart_total">
@@ -73,9 +73,9 @@ let checkout_cart = () => {
 
 let apply_coupan=()=>{
   console.log(1000);
-  // document.querySelector(".checkout_apply_coupan_b").addEventListener("click",()=>{
+  document.getElementById("checkout_apply_coupan_b").addEventListener("click",()=>{
   // let coupan_applied=()=>{
-    // event.preventDefault();
+    event.preventDefault();
     let coupon=document.querySelector(".checkout_gift_coupan_input").value;
       if(coupon=="BLISS20"){
        let total= document.querySelector(".checkout_cart_total_price").value;
@@ -86,7 +86,7 @@ let apply_coupan=()=>{
       else{
         console.log("not running");
       }
-    // })
+    })
     // return coupan_applied();
       
 
@@ -141,8 +141,8 @@ let checkout_cart1 = () => {
 
 
 <div class="checkout_coupan_div">
-    <input type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
-    <button class="checkout_apply_coupan_b">Apply</button>
+    <input  type="text" id="checkout_gift_coupan_input" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
+    <button id="checkout_apply_coupan_b" class="checkout_apply_coupan_b">Apply</button>
 </div>
 <div class="checkout_cart_price111">
 <div class="checkout_cart_total">
@@ -297,7 +297,7 @@ let shipping_item = () => {
 function append_adress() {
  let data=JSON.parse(localStorage.getItem("adress"))||[];
  if(data.email.length>0){
-
+console.log("data is"+data.email);
   let email = document.querySelector("#checkout_emailbox").value;
   email=data.email;
   let country = document.querySelector(".checkout_country_s1").value;
@@ -327,4 +327,4 @@ function append_adress() {
 
 
 
-export {apply_coupan, checkout_cart, checkout_cart1,append_adress, displayitems,displayitems1, shipping_item };
+export { checkout_cart, checkout_cart1,append_adress, displayitems,displayitems1, shipping_item };
