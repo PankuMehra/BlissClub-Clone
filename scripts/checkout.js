@@ -96,6 +96,17 @@ function collect_adress() {
   let state = document.querySelector("#checkout_state").value;
   let pincode = document.querySelector("#checkout_pincode").value;
   let phone = document.querySelector("#checkout_phone1").value;
+  if(email==""||country==""||first_name==""||last_name==""||adress1==""||apartment==""||city==""||state==""||pincode==""||phone==""){
+    document.getElementById("successfullAlert").innerText = `fill all the required input`;
+    document.getElementById("successfullAlert").style.backgroundColor =
+      "red";
+    document.getElementById("successfullAlert").style.display = "flex";
+    setTimeout(function () {
+      document.getElementById("successfullAlert").style.display = "none";
+    }, 1350);
+  
+  }
+  else{
   let adressbag = `${adress1},${apartment},${pincode},${state},${country}`;
   let email_adress = [];
   email_adress.push(email);
@@ -115,6 +126,7 @@ function collect_adress() {
   );
   localStorage.setItem("email", JSON.stringify(email_adress));
   localStorage.setItem("adress", JSON.stringify(all_shipping_items));
+  }
   // window.location.href="./Shipping.html";
 }
 // collect_adress();
