@@ -243,6 +243,7 @@
         }
 
         element.remove();
+        location.href = "./cart.html"
     }
 
     function add_commas_to_price_string(stri){
