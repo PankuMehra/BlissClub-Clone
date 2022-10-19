@@ -57,6 +57,9 @@
     width: 80%;
     margin: auto;
    }
-   #total_price_span{
+   #total_price_span1{
+    width: 18%;
+   }
+   #total_price_span2{
     width: 18%;
    }
