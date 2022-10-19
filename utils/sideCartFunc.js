@@ -50,9 +50,9 @@ function sideCartFooter(data) {
   let MRP = 0;
   let YouPay = 0;
   data.map((elem) => {
-    MRP = MRP + (Number(elem.price2) * Number(elem.quantity));
-    YouPay = YouPay + (Number(elem.price1) * Number(elem.quantity));
-  })
+    MRP = MRP + Number(elem.price2) * Number(elem.quantity);
+    YouPay = YouPay + Number(elem.price1) * Number(elem.quantity);
+  });
 
   return `<p>You will earn
     <span>
@@ -63,15 +63,15 @@ function sideCartFooter(data) {
         </span>on this purchase.</p>
 <div id="sideDrawer-MRP">
     <p>MRP</p>
-    <p>Rs. ${MRP}</p>
+    <p>Rs. <span id="sideCartMRP">${MRP}</span></p>
     </div>
 <div id="sideDrawer-YouSave">
 <p>YOU SAVE</p>
-    <p>Rs. ${MRP - YouPay}</p>
+    <p>Rs. <span id="sideCartYouSave">${MRP - YouPay}</span></p>
 </div>
 <div id="sideDrawer-YouPay">
 <h4>YOU PAY</h4>
-    <h4>Rs. ${YouPay}</h4>
+    <h4>Rs. <span id="sideCartYouPay">${YouPay}</span></h4>
 </div>
 <a href="./cart.html"><button id="sideDrawer-checkout">Proceed</button></a>
 <p>Free shipping, cash on delivery, free exchanges and returns</p>`;
@@ -104,7 +104,7 @@ function sideCart() {
 
 let cartData = (data) => {
   document.getElementById("sideDrawer-ProductBox").innerHTML = "";
-  
+
   data.map((elem, index) => {
     //   document.getElementById("sideDrawer-ProductBox").innerHTML += `<div id="cart-product">
     //   <div id="cart-productImage">
@@ -167,8 +167,8 @@ let cartData = (data) => {
     let productPrice = document.createElement("p");
     productPrice.id = "cart-productPrice";
 
-    productStrikedPrice.innerHTML = elem.price2;
-    productPrice.innerHTML = elem.price1;
+    productStrikedPrice.innerHTML = "Rs. " + elem.price2;
+    productPrice.innerHTML = "Rs. " + elem.price1;
 
     productPriceBox.append(productStrikedPrice, productPrice);
     productDetailsBox.append(NameColorSizeBox, productPriceBox);
@@ -191,8 +191,6 @@ let cartData = (data) => {
     quantityInput.value = elem.quantity;
     let productPlusBox = document.createElement("div");
     productPlusBox.innerHTML = `<i class="fa-solid fa-plus" id="addProduct"></i>`;
-    
-
 
     productRemoveBox.append(productRemove);
     productAddBox.append(productMinusBox, quantityInput, productPlusBox);
@@ -201,26 +199,48 @@ let cartData = (data) => {
 
     document.getElementById("sideDrawer-ProductBox").append(productBox);
 
-
-    productRemove.addEventListener("click", function(){
+    productRemove.addEventListener("click", function () {
       removeProduct(index, data);
     });
 
-
     let DecreaseQuantity = () => {
       quantityInput.value--;
-      if(Number(quantityInput.value) < 1){
-        quantityInput.value = 1;
+      if (Number(quantityInput.value) < 1) {
+        // quantityInput.value = 1;
+        data.splice(index, 1);
+        localStorage.setItem("cart_items", JSON.stringify(data));
+        cartData(data);
       }
       elem.quantity = Number(elem.quantity) - 1;
+      let MRP = document.getElementById("sideCartMRP").innerText;
+      document.getElementById("sideCartMRP").innerText =
+        Number(MRP) - Number(elem.price2);
+      let YouSave = document.getElementById("sideCartYouSave").innerText;
+      document.getElementById("sideCartYouSave").innerText =
+        Number(YouSave) - (Number(elem.price2) - Number(elem.price1));
+      let YouPay = document.getElementById("sideCartYouPay").innerText;
+      document.getElementById("sideCartYouPay").innerText =
+        Number(YouPay) - Number(elem.price1);
       localStorage.setItem("cart_items", JSON.stringify(data));
     };
     let IncreaseQuantity = () => {
       quantityInput.value++;
-      if(Number(quantityInput.value) > 9){
+      if (Number(quantityInput.value) > 9) {
         quantityInput.value = 9;
       }
       elem.quantity = Number(elem.quantity) + 1;
+
+      let MRP = document.getElementById("sideCartMRP").innerText;
+      document.getElementById("sideCartMRP").innerText =
+        Number(MRP) + Number(elem.price2);
+      let YouSave = document.getElementById("sideCartYouSave").innerText;
+      document.getElementById("sideCartYouSave").innerText =
+        Number(YouSave) + (Number(elem.price2) - Number(elem.price1));
+      let YouPay = document.getElementById("sideCartYouPay").innerText;
+      document.getElementById("sideCartYouPay").innerText =
+        Number(YouPay) + Number(elem.price1);
+      localStorage.setItem("cart_items", JSON.stringify(data));
+
       localStorage.setItem("cart_items", JSON.stringify(data));
     };
 
@@ -230,20 +250,17 @@ let cartData = (data) => {
     let setItemId = () => {
       location.href = "./viewProduct.html";
       localStorage.setItem("productId", elem.id);
-    }
+    };
     productName.addEventListener("click", setItemId);
     productImage.addEventListener("click", setItemId);
   });
 };
-
-
 
 let removeProduct = (index, data) => {
   console.log(index);
   data.splice(index, 1);
   localStorage.setItem("cart_items", JSON.stringify(data));
   cartData(data);
-}
-
+};
 
 export { drawerMightLike, sideCartFooter, sideCart, cartData };
