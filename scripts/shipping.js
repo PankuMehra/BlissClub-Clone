@@ -8,8 +8,8 @@ document.querySelector("#checkout_mid_hidden").innerHTML = checkout_cart1();
 
 //  import { displayitems } from "./checkout.js";
 
-let allitem=JSON.parse(localStorage.getItem("allitems"))||[];
-
+let allitem = JSON.parse(localStorage.getItem("cart_items"))||[] ;
+console.log(allitem);
 
  displayitems(allitem);
 

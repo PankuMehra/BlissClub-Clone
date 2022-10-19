@@ -44,8 +44,8 @@ let checkout_cart = () => {
 
 
 <div class="checkout_coupan_div">
-    <input onclick="apply_coupan" type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
-    <button class="checkout_apply_coupan_b">Apply</button>
+    <input type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
+    <button id="checkout_apply_coupan_b" class="checkout_apply_coupan_b">Apply</button>
 </div>
 <div class="checkout_cart_price111">
 <div class="checkout_cart_total">
@@ -73,7 +73,7 @@ let checkout_cart = () => {
 
 let apply_coupan=()=>{
   console.log(1000);
-  // document.querySelector(".checkout_apply_coupan_b").addEventListener("click",()=>{
+  document.querySelector(".checkout_apply_coupan_b").addEventListener("click",()=>{
   // let coupan_applied=()=>{
     // event.preventDefault();
     let coupon=document.querySelector(".checkout_gift_coupan_input").value;
@@ -92,12 +92,14 @@ let apply_coupan=()=>{
 
    
   
+})
 }
+
 // apply_coupan();
 
 
 let checkout_cart1 = () => {
-  console.log("2st Checkout");
+  // console.log("2st Checkout");
   return `<div class="checkoutmid_p2">
   <div class="checkout_table_div"> <table>
   <caption class="checkout_hidden_item">Shopping Cart</caption>
@@ -142,7 +144,7 @@ let checkout_cart1 = () => {
 
 <div class="checkout_coupan_div">
     <input type="text" class="checkout_gift_coupan_input" placeholder="Gift card or discount code">
-    <button class="checkout_apply_coupan_b">Apply</button>
+    <button id="checkout_apply_coupan_b" class="checkout_apply_coupan_b">Apply</button>
 </div>
 <div class="checkout_cart_price111">
 <div class="checkout_cart_total">
@@ -183,7 +185,7 @@ function displayitems(allitem) {
   let total_price=0;
 
   allitem.forEach(element => {
-    total_price+=Number(element.price);
+    total_price+=Number((element.price1)*(element.quantity));
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
     let th2 = document.createElement("th");
@@ -196,27 +198,26 @@ function displayitems(allitem) {
     itemdiv.setAttribute("id", "checkout_cart_itemdiv");
     let image = document.createElement("img");
     image.setAttribute("id", "checkout_cart_item_image");
-    image.src = element.image;
+    image.src = element.image1;
     th2.append(element.name);
     td3.append(element.countofitem);
     td3.setAttribute("class", "checkout_hidden_item");
-    td4.append(element.price);
+    td4.append(element.price1);
     let imgthumb = document.createElement("span");
     imgthumb.setAttribute("class", "checkout_cart_thumbanail")
     thumbdiv.setAttribute("class", "checkout_image_thumb_main");
     imagediv.setAttribute("class", "checkout_cart_image")
-    imgthumb.append(element.countofitem);
+    imgthumb.append(element.quantity);
     imagediv.append(image);
     thumbdiv.append(imagediv, imgthumb);
     td1.append(thumbdiv);
     tr.append(td1, th2, td3, td4);
     document.querySelector("#tbody_mid2").append(tr);
   })
-  document.querySelector("#total_price_span").innerText =total_price;
-  console.log(total_price);
+  console.log(total_price ," lol");
+  document.getElementById("total_price_span").innerText =total_price;
 
 }
-
 
 
 
@@ -225,7 +226,7 @@ function displayitems(allitem) {
 function displayitems1(allitem){
   let total_price=0;
   allitem.forEach(element => {
-    total_price+=element.price;
+    total_price+=element.price1*(element.quantity);
    let tr=document.createElement("tr");
    let td1=document.createElement("td");
    let th2=document.createElement("th");
@@ -238,16 +239,16 @@ function displayitems1(allitem){
    itemdiv.setAttribute("id","checkout_cart_itemdiv");
    let image=document.createElement("img");
    image.setAttribute("id","checkout_cart_item_image");
-   image.src=element.image;
+   image.src=element.image1;
    th2.append(element.name);
    td3.append(element.countofitem);
    td3.setAttribute("class","checkout_hidden_item");
-   td4.append(element.price);
+   td4.append(element.price1);
    let imgthumb=document.createElement("span");
    imgthumb.setAttribute("class","checkout_cart_thumbanail")
    thumbdiv.setAttribute("class","checkout_image_thumb_main");
    imagediv.setAttribute("class","checkout_cart_image")
-   imgthumb.append(element.countofitem);
+   imgthumb.append(element.quantity);
    imagediv.append(image);
    thumbdiv.append(imagediv,imgthumb);
    td1.append(thumbdiv);
@@ -294,37 +295,37 @@ let shipping_item = () => {
 
 
 
-function append_adress() {
- let data=JSON.parse(localStorage.getItem("adress"))||[];
- if(data.email.length>0){
+// function append_adress() {
+//  let data=JSON.parse(localStorage.getItem("adress"))||[];
+// //  if(data.email!=""){
 
-  let email = document.querySelector("#checkout_emailbox").value;
-  email=data.email;
-  let country = document.querySelector(".checkout_country_s1").value;
-  country=data.country;
-  let first_name = document.querySelector("#checkout_first_name").value;
-  first_name=data.first_name;
-  let last_name = document.querySelector("#checkout_last_name").value;
-  last_name=data.last_name;
-  let adress1 = document.querySelector("#checkout_adress1").value;
-  adress1=data.adress1;
-  let apartment = document.querySelector("#checkout_apartment").value;
-  apartment=data.apartment;
-  let city = document.querySelector("#checkout_city").value;
-  city=data.city;
-  let state = document.querySelector("#checkout_state").value;
-  state=data.state;
-  let pincode = document.querySelector("#checkout_pincode").value;
-  pincode=data.pincode;
-  let phone = document.querySelector("#checkout_phone1").value;
-  phone=data.phone;
- }
-}
-
-
+//   let email = document.querySelector("#checkout_emailbox").value;
+//   email=data.email;
+//   let country = document.querySelector(".checkout_country_s1").value;
+//   country=data.country;
+//   let first_name = document.querySelector("#checkout_first_name").value;
+//   first_name=data.first_name;
+//   let last_name = document.querySelector("#checkout_last_name").value;
+//   last_name=data.last_name;
+//   let adress1 = document.querySelector("#checkout_adress1").value;
+//   adress1=data.adress1;
+//   let apartment = document.querySelector("#checkout_apartment").value;
+//   apartment=data.apartment;
+//   let city = document.querySelector("#checkout_city").value;
+//   city=data.city;
+//   let state = document.querySelector("#checkout_state").value;
+//   state=data.state;
+//   let pincode = document.querySelector("#checkout_pincode").value;
+//   pincode=data.pincode;
+//   let phone = document.querySelector("#checkout_phone1").value;
+//   phone=data.phone;
+// //  }
+// }
 
 
 
 
 
-export {apply_coupan, checkout_cart, checkout_cart1,append_adress, displayitems,displayitems1, shipping_item };
+
+
+export {apply_coupan, checkout_cart, checkout_cart1, displayitems,displayitems1, shipping_item };
