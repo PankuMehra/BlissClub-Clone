@@ -174,7 +174,7 @@ let topNavBar = () => {
     </form>
     <div id="micBox">
       <button id="speak" class="back-trans">
-        <ion-icon id="mic-icon" name="mic"></ion-icon>
+      <box-icon name='microphone-alt' type='solid' animation='tada' ></box-icon>
       </button>
     </div>
   </div>
