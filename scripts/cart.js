@@ -294,5 +294,5 @@
     }
 
     function go_to_shop_our_products_page(){
-        window.location.href = "https://blissclub.com/collections/all";
+        window.location.href = "./shopAll.html";
     }
