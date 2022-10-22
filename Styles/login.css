@@ -62,8 +62,12 @@
 }
 #login-form{
   margin-top: 25px;
+  /* margin: auto; */
+  /* border: solid red; */
 }
 .lb {
+  margin: auto;
+  margin-top: 10px;
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 5px;
