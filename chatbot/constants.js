@@ -1,4 +1,4 @@
-let name = "sushant";
+let name = localStorage.getItem("Username") || "customer";
 // Options the user could type in
 const prompts = [
   ["hi", "hey", "hello", "good morning", "good afternoon"],
