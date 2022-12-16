@@ -12,8 +12,8 @@ import {
 } from "../utils/functions.js";
 import { chatbot } from "../chatbot/chatbotexp.js";
 import { footer } from "../utils/footer-exp.js";
+import URL from "../URL/URL.js";
 import { topNavBar, navBar } from "../utils/nav-bar-exp.js";
-
 
 document.getElementById("side-nav-Modal").innerHTML = navBar();
 document.getElementById("section-header").innerHTML = topNavBar();
@@ -23,7 +23,6 @@ document.getElementById("myFooter").innerHTML = footer();
 document.getElementById("all-Items-slidebaarBox").innerHTML = slidebar();
 document.getElementById("all-Items-Filtering").innerHTML = filtering();
 document.getElementById("all-Items-HeadingBox").innerHTML += HeadingSort();
-
 
 let botopen = false;
 document.getElementById("bot-opener").addEventListener("click", () => {
@@ -40,9 +39,7 @@ document.getElementById("close-button").addEventListener("click", () => {
   botopen = false;
 });
 
-
-
-let Url = `https://blissclub.herokuapp.com/data?category=leggings`;
+let Url = `${URL}?category=leggings`;
 fetchData(Url).then(function (data) {
   displayData(data);
   document.getElementById("input-min").addEventListener("input", function () {

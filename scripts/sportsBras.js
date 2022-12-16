@@ -13,6 +13,7 @@ import {
 import { chatbot } from "../chatbot/chatbotexp.js";
 import { footer } from "../utils/footer-exp.js";
 import { topNavBar, navBar } from "../utils/nav-bar-exp.js";
+import URL from "../URL/URL.js";
 
 
 document.getElementById("side-nav-Modal").innerHTML = navBar();
@@ -42,7 +43,7 @@ document.getElementById("close-button").addEventListener("click", () => {
 
 
 
-let Url = `https://blissclub.herokuapp.com/data?category=sportsBras`;
+let Url = `${URL}?category=sportsBras`;
 fetchData(Url).then(function (data) {
   displayData(data);
   document.getElementById("input-min").addEventListener("input", function () {

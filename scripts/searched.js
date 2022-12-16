@@ -5,76 +5,72 @@ import {
   sliderLeft,
   slideRight,
   filtering,
-  HeadingSort,
-  filterData,
-  filterDataL2H,
-  filterDataH2L,
+  HeadingSort
 } from "../utils/functions.js";
-import { chatbot } from "../chatbot/chatbotexp.js";
-import { footer } from "../utils/footer-exp.js";
-import { topNavBar, navBar } from "../utils/nav-bar-exp.js";
-
-
-document.getElementById("side-nav-Modal").innerHTML = navBar();
-document.getElementById("section-header").innerHTML = topNavBar();
-document.getElementById("chatbot-main").innerHTML = chatbot();
-document.getElementById("myFooter").innerHTML = footer();
-
-document.getElementById("all-Items-slidebaarBox").innerHTML = slidebar();
-document.getElementById("all-Items-Filtering").innerHTML = filtering();
-document.getElementById("all-Items-HeadingBox").innerHTML += HeadingSort();
-
-
-let botopen = false;
-document.getElementById("bot-opener").addEventListener("click", () => {
-  if (botopen) {
-    document.getElementById("chatbot-main").style.display = "none";
-    botopen = false;
-  } else {
-    document.getElementById("chatbot-main").style.display = "block";
-    botopen = true;
-  }
-});
-document.getElementById("close-button").addEventListener("click", () => {
-  document.getElementById("chatbot-main").style.display = "none";
-  botopen = false;
-});
+import URL from "../URL/URL.js";
 
 
 
 let searchIt = localStorage.getItem("searchIt");
+document.getElementById("all-Items-slidebaarBox").innerHTML = slidebar();
+document.getElementById("all-Items-Filtering").innerHTML = filtering();
+document.getElementById("all-Items-HeadingBox").innerHTML += HeadingSort();
 document.getElementById("ProductsHeading").innerHTML += searchIt;
-document.getElementById("ProductsHeadingName").innerHTML = searchIt;
-let Url = `https://blissclub.herokuapp.com/data?q=${searchIt}`;
-fetchData(Url).then(function (data) {
-  displayData(data);
-  document.getElementById("input-min").addEventListener("input", function () {
-    filterData(data);
-  });
-  document.getElementById("input-max").addEventListener("input", function () {
-    filterData(data);
-  });
-  document.getElementById("range-min").addEventListener("change", function () {
-    filterData(data);
-  });
-  document.getElementById("range-max").addEventListener("change", function () {
-    filterData(data);
-  });
 
-  document.getElementById("priceL2H").addEventListener("click", function () {
-    filterDataL2H(data);
-  });
-  document.getElementById("priceH2L").addEventListener("click", function () {
-    filterDataH2L(data);
-  });
+
+
+let Url = `${URL}?q=${searchIt}`;
+fetchData(Url).then(function (data) {
+  // PriceFilter
+  displayData(data);
+  let filterData = () => {
+    let arr = data;
+    let priceInputMin = Number(document.querySelector(".input-min").value);
+    let priceInputMax = Number(document.querySelector(".input-max").value);
+    let newArr = arr.filter((elem) => {
+      if (elem.price1 > priceInputMin && elem.price1 < priceInputMax) {
+        return elem;
+      }
+    });
+    displayData(newArr);
+  };
+  
+  document.getElementById("input-min").addEventListener("input", filterData);
+  document.getElementById("input-max").addEventListener("input", filterData);
+  document.getElementById("range-min").addEventListener("change", filterData);
+  document.getElementById("range-max").addEventListener("change", filterData);
+  
+  // low to High Sorting
+  let filterDataL2H = () => {
+    let arr = data;
+    let L2H = arr.sort(function (a, b) {
+      return Number(a.price1) - Number(b.price1);
+    });
+    console.log(L2H)
+    displayData(L2H);
+  };
+  // High to Low Sorting
+  let filterDataH2L = () => {
+    let arr = data;
+    console.log("dfbsdg");
+    let H2L = arr.sort(function (a, b) {
+      return Number(b.price1) - Number(a.price1);
+    });
+    console.log(H2L)
+    displayData(H2L);
+  };
+  
+
+  document.getElementById("priceL2H").addEventListener("click", filterDataL2H);
+  document.getElementById("priceH2L").addEventListener("click", filterDataH2L);
 });
 
 document
-  .getElementById("all-items-leftSlideButton")
+.getElementById("all-items-leftSlideButton")
   .addEventListener("click", function () {
     sliderLeft("all-Items-slidebar-mover");
   });
-document
+  document
   .getElementById("all-items-rightSlideButton")
   .addEventListener("click", function () {
     slideRight("all-Items-slidebar-mover");

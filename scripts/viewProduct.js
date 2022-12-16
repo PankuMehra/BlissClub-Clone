@@ -2,6 +2,8 @@ import { fetchData } from "../utils/functions.js";
 import { chatbot } from "../chatbot/chatbotexp.js";
 import { footer } from "../utils/footer-exp.js";
 import { topNavBar, navBar } from "../utils/nav-bar-exp.js";
+import URL from "../URL/URL.js";
+
 
 document.getElementById("side-nav-Modal").innerHTML = navBar();
 document.getElementById("section-header").innerHTML = topNavBar();
@@ -92,7 +94,7 @@ document
       setTimeout(function () {
         document.getElementById("successfullAlert").style.display = "none";
         
-        let leggingsUrl = `https://blissclub.herokuapp.com/data?id=${productId}`;
+        let leggingsUrl = `${URL}?id=${productId}`;
         fetchData(leggingsUrl).then(function (data) {
           console.log("data:", data);
 
@@ -118,7 +120,7 @@ document
   });
 
 // let productId = localStorage.getItem("productId");
-let leggingsUrl = `https://blissclub.herokuapp.com/data`;
+let leggingsUrl = `${URL}`;
 fetchData(leggingsUrl).then(function (data) {
   // console.log(data);
 

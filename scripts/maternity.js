@@ -12,6 +12,7 @@ import {
 } from "../utils/functions.js";
 import { chatbot } from "../chatbot/chatbotexp.js";
 import { footer } from "../utils/footer-exp.js";
+import URL from "../URL/URL.js";
 import { topNavBar, navBar } from "../utils/nav-bar-exp.js";
 
 
@@ -42,7 +43,7 @@ document.getElementById("close-button").addEventListener("click", () => {
 
 
 
-let Url = `https://blissclub.herokuapp.com/data?category=maternity`;
+let Url = `${URL}?category=maternity`;
 fetchData(Url).then(function (data) {
   displayData(data);
   document.getElementById("input-min").addEventListener("input", function () {
