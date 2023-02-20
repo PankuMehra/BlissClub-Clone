@@ -176,7 +176,7 @@ let topNavBar = () => {
       <button id="speak" class="back-trans">
       <box-icon name='microphone-alt' type='solid' animation='tada' ></box-icon>
       </button>
-    </div>
+    </div>  
   </div>
   <!-- </div> -->
   <div class="header-item2">

@@ -213,7 +213,7 @@
 }
 #all-Items-fetchedProducts {
   /* border: 2px solid red; */
-  display: grid;
+  display: fle;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
