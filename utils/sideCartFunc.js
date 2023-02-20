@@ -1,5 +1,4 @@
 function drawerMightLike(data) {
-  console.log(data);
   return `<div id="drawerUp-mightLikeTop">
      <p id="drawerUp-mightLike">YOU MAY ALSO LIKE</p>
      <h4 id="drawerUp-PlusMinus"><i class="fa-solid fa-minus" id="minusProduct"></i></h4>

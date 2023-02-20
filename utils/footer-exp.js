@@ -37,7 +37,7 @@ let footer = () => {
                         560034
                         CIN - U52520KA202C133220
                         In case of queries email us at :
-                        grievanceofficer@myblissclub.in</a></li>
+                        gvofficer@myblissclub.in</a></li>
             </ul>
         </div>
         <div id="footerText1">

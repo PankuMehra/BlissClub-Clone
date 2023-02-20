@@ -343,7 +343,7 @@ button {
   cursor: pointer;
 }
 
-@media screen and (min-width: 0px) and (max-width: 350px) {
+@media screen and (min-width: 0px) and (max-width: 400px) {
   #header-searchBox {
     display: none;
   }
@@ -358,7 +358,10 @@ button {
   }
   .header-item2 {
     /* width: 130px; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    /* border: 2px solid red; */
+    width: 80px;
+    justify-content: space-between;
   }
   #header-item-image-whatsapp {
     display: none;
