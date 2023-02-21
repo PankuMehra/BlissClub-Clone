@@ -1,2 +1,2 @@
 # BlissClub-Clone
-Our team is gonna create our Website Project given by Masai which will enhance our skill in Website developement.
+This project is an E-Commerce system that allows users to shop activewear specifically for the women of India. This is the community-first brand crafting technical apparel for #WomenWhoMove.
