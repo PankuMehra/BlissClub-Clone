@@ -1,6 +1,7 @@
 function drawerMightLike(data) {
+  console.log("data:", data);
   return `<div id="drawerUp-mightLikeTop">
-     <p id="drawerUp-mightLike">YOU MAY ALSO LIKE</p>
+     <p id="drawerUp-mightLike">YOU MAY LIKE</p>
      <h4 id="drawerUp-PlusMinus"><i class="fa-solid fa-minus" id="minusProduct"></i></h4>
  </div>
  <div id="drawerUp-product">
@@ -27,7 +28,7 @@ function drawerMightLike(data) {
                  <button class="drawerUp-select-color4"></button>
              </div>
              <div>
-                 <button class="drawerUp-select-color5"></buttom>
+                 <button class="drawerUp-select-color5"></button>
              </div>
          </div>
          <select id="drawerUp-productSelectSize">
@@ -56,21 +57,21 @@ function sideCartFooter(data) {
   return `<p>You will earn
     <span>
         ${YouPay} BlissCoins
-    </span>worth
+    </span> worth
     <span>
-        Rs. ${YouPay / 10}0
-        </span>on this purchase.</p>
+        Rs. ${(YouPay / 10).toFixed(2)}
+    </span> on this purchase.</p>
 <div id="sideDrawer-MRP">
     <p>MRP</p>
     <p>Rs. <span id="sideCartMRP">${MRP}</span></p>
-    </div>
+</div>
 <div id="sideDrawer-YouSave">
-<p>YOU SAVE</p>
-    <p>Rs. <span id="sideCartYouSave">${MRP - YouPay}</span></p>
+  <p>YOU SAVE</p>
+  <p>Rs. <span id="sideCartYouSave">${MRP - YouPay}</span></p>
 </div>
 <div id="sideDrawer-YouPay">
-<h4>YOU PAY</h4>
-    <h4>Rs. <span id="sideCartYouPay">${YouPay}</span></h4>
+  <h4>YOU PAY</h4>
+  <h4>Rs. <span id="sideCartYouPay">${YouPay}</span></h4>
 </div>
 <a href="./cart.html"><button id="sideDrawer-checkout">Proceed</button></a>
 <p>Free shipping, cash on delivery, free exchanges and returns</p>`;
@@ -101,47 +102,35 @@ function sideCart() {
   </div>`;
 }
 
-let cartData = (data) => {
-  document.getElementById("sideDrawer-ProductBox").innerHTML = "";
+let cartData = (data = []) => {
+  // Render the product list for the side cart. Data defaults to an empty array.
+  const productBox = document.getElementById("sideDrawer-ProductBox");
+  const footer = document.getElementById("sideDrawer-Footer");
+  if (!productBox) return;
+  productBox.innerHTML = "";
+
+  // If cart is empty, show an empty-cart placeholder and clear footer
+  if (!Array.isArray(data) || data.length === 0) {
+    productBox.innerHTML = `<div id="sideDrawer-empty_cart" style="font-family: sans-serif">
+              <h1 id="sideDrawer-empty_cart_line">
+                Your cart is currently empty.
+              </h1>
+              <a href="./shopAll.html"
+                ><button class="shop_button" type="button">SHOP OUR PRODUCTS</button></a
+              >
+            </div>`;
+    if (footer) footer.innerHTML = "";
+    return;
+  }
 
   data.map((elem, index) => {
-    //   document.getElementById("sideDrawer-ProductBox").innerHTML += `<div id="cart-product">
-    //   <div id="cart-productImage">
-    //     <a href="./viewProduct.html"><img src="${elem.image1}" onclick="setItemId(${elem.id})" alt="" /></a>
-    //   </div>
-    //   <div id="cart-productDetailsBox">
-    //     <div>
-    //       <p id="cart-productName"><a href="./viewProduct.html" onclick="setItemId(${elem.id})">${elem.name}</a></p>
-    //       <p id="side-cart-productColorSize">${elem.color} / ${elem.size}</p>
-    //     </div>
-    //     <div id="cart-PriceDiv">
-    //       <p id="cart-productStrikedPrice">Rs. ${elem.price2}</p>
-    //       <p id="cart-productPrice">Rs. ${elem.price1}</p>
-    //     </div>
-    //   </div>
-    //   <div id="side-cart-removeAddBox">
-    //     <div id="side-cart-removeProduct">
-    //       <p>REMOVE</p>
-    //     </div>
-    //     <div id="side-cart-addProduct">
-
-    //       <i class="fa-solid fa-minus" id="minusProduct"></i>
-    //       <input type="number" id="side-cart-addMinusQuantity" >
-    //       <i class="fa-solid fa-plus" id="addProduct"></i>
-    //     </div>
-    //   </div>
-    // </div>`
-
     let productBox = document.createElement("div");
     productBox.id = "cart-product";
     let productImageBox = document.createElement("div");
     productImageBox.id = "cart-productImage";
-    // let imageClickable = document.createElement("a");
-    // imageClickable.href = "./viewProduct.html"
     let productImage = document.createElement("img");
     productImage.src = elem.image1;
 
-    // imageClickable.append();
     productImageBox.append(productImage);
 
     let productDetailsBox = document.createElement("div");
@@ -149,14 +138,11 @@ let cartData = (data) => {
     let NameColorSizeBox = document.createElement("div");
     let productName = document.createElement("p");
     productName.id = "cart-productName";
-    // let productNameClickable = document.createElement("a");
-    // productNameClickable.href = "./viewProduct.html";
     productName.innerHTML = elem.name;
     let productColorSize = document.createElement("p");
     productColorSize.id = "side-cart-productColorSize";
     productColorSize.innerHTML = elem.color + " / " + elem.size;
 
-    // .append(productName);
     NameColorSizeBox.append(productName, productColorSize);
 
     let productPriceBox = document.createElement("div");
@@ -203,62 +189,56 @@ let cartData = (data) => {
     });
 
     let DecreaseQuantity = () => {
-      quantityInput.value--;
-      if (Number(quantityInput.value) < 1) {
-        // quantityInput.value = 1;
+      // If quantity will become less than 1, remove the product and re-render
+      if (Number(quantityInput.value) <= 1) {
         data.splice(index, 1);
         localStorage.setItem("cart_items", JSON.stringify(data));
+        document.getElementById("sideDrawer-ProductBox").innerHTML = "";
+        document.getElementById("sideDrawer-Footer").innerHTML =
+          sideCartFooter(data);
         cartData(data);
+        return;
       }
+
       elem.quantity = Number(elem.quantity) - 1;
-      let MRP = document.getElementById("sideCartMRP").innerText;
-      document.getElementById("sideCartMRP").innerText =
-        Number(MRP) - Number(elem.price2);
-      let YouSave = document.getElementById("sideCartYouSave").innerText;
-      document.getElementById("sideCartYouSave").innerText =
-        Number(YouSave) - (Number(elem.price2) - Number(elem.price1));
-      let YouPay = document.getElementById("sideCartYouPay").innerText;
-      document.getElementById("sideCartYouPay").innerText =
-        Number(YouPay) - Number(elem.price1);
+      quantityInput.value = elem.quantity;
+
       localStorage.setItem("cart_items", JSON.stringify(data));
+      document.getElementById("sideDrawer-Footer").innerHTML =
+        sideCartFooter(data);
     };
+
     let IncreaseQuantity = () => {
-      quantityInput.value++;
-      if (Number(quantityInput.value) > 9) {
+      if (Number(quantityInput.value) >= 9) {
         quantityInput.value = 9;
+        return;
       }
       elem.quantity = Number(elem.quantity) + 1;
-
-      let MRP = document.getElementById("sideCartMRP").innerText;
-      document.getElementById("sideCartMRP").innerText =
-        Number(MRP) + Number(elem.price2);
-      let YouSave = document.getElementById("sideCartYouSave").innerText;
-      document.getElementById("sideCartYouSave").innerText =
-        Number(YouSave) + (Number(elem.price2) - Number(elem.price1));
-      let YouPay = document.getElementById("sideCartYouPay").innerText;
-      document.getElementById("sideCartYouPay").innerText =
-        Number(YouPay) + Number(elem.price1);
-      localStorage.setItem("cart_items", JSON.stringify(data));
+      quantityInput.value = elem.quantity;
 
       localStorage.setItem("cart_items", JSON.stringify(data));
+      document.getElementById("sideDrawer-Footer").innerHTML =
+        sideCartFooter(data);
     };
 
     productMinusBox.addEventListener("click", DecreaseQuantity);
     productPlusBox.addEventListener("click", IncreaseQuantity);
 
     let setItemId = () => {
-      location.href = "./viewProduct.html";
       localStorage.setItem("productId", elem.id);
+      location.href = "./viewProduct.html";
     };
     productName.addEventListener("click", setItemId);
     productImage.addEventListener("click", setItemId);
   });
+  document.getElementById("sideDrawer-Footer").innerHTML = sideCartFooter(data);
 };
 
 let removeProduct = (index, data) => {
-  console.log(index);
   data.splice(index, 1);
   localStorage.setItem("cart_items", JSON.stringify(data));
+  document.getElementById("sideDrawer-ProductBox").innerHTML = "";
+  document.getElementById("sideDrawer-Footer").innerHTML = sideCartFooter(data);
   cartData(data);
 };
 

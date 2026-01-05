@@ -59,7 +59,6 @@
           <div id="sideDrawer-Box">
             <div id="sideDrawer-ProductBox">
               <!-- =================================================================== -->
-
               <div id="cart-product">
                 <div id="cart-productImage">
                   <img src="${elem.image1}" alt="" />
@@ -67,7 +66,9 @@
                 <div id="cart-productDetailsBox">
                   <div>
                     <p id="cart-productName">${elem.name}</p>
-                    <p id="side-cart-productColorSize">${elem.color} / <span>${elem.size}</span></p>
+                    <p id="side-cart-productColorSize">
+                      ${elem.color} / <span>${elem.size}</span>
+                    </p>
                   </div>
                   <div id="cart-PriceDiv">
                     <p id="cart-productStrikedPrice">Rs. ${elem.price2}</p>
@@ -80,7 +81,7 @@
                   </div>
                   <div id="side-cart-addProduct">
                     <i class="fa-solid fa-minus" id="minusProduct"></i>
-                    <input type="number" id="side-cart-addMinusQuantity">
+                    <input type="number" id="side-cart-addMinusQuantity" />
                     <i class="fa-solid fa-plus" id="addProduct"></i>
                   </div>
                 </div>
