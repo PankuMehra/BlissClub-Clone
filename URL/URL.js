@@ -1,6 +1,5 @@
 const URL = () => {
-  // const data = "http://localhost:3001/data";
-  const data = "https://jumpy-cultured-william.glitch.me/data";
+  const data = "https://blissclub-data.onrender.com/products";
   return data;
 };
 export default URL();
