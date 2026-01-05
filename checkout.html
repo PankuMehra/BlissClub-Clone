@@ -216,6 +216,7 @@
                 id="checkout_emailbox"
                 placeholder="Email"
                 required
+                aria-label="Email address"
               />
               <div class="checkout_checkbox">
                 <input
@@ -246,11 +247,13 @@
                   type="text"
                   id="checkout_first_name"
                   placeholder="First Name"
+                  aria-label="First name"
                 />
                 <input
                   type="text"
                   id="checkout_last_name"
                   placeholder="Last Name"
+                  aria-label="Last name"
                 />
               </div>
               <div id="checkout_adress">
@@ -258,6 +261,7 @@
                   type="text"
                   id="checkout_adress1"
                   placeholder="Address"
+                  aria-label="Address"
                 />
               </div>
               <div id="checkout_adress">
@@ -265,11 +269,12 @@
                   type="text"
                   id="checkout_apartment"
                   placeholder="Apartment,Suite,etc.(Optional)"
+                  aria-label="Apartment or suite (optional)"
                 />
               </div>
               <div id="checkout_city_pin">
-                <input type="text" id="checkout_city" placeholder="City" />
-                <select name="State" id="checkout_state">
+                <input type="text" id="checkout_city" placeholder="City" aria-label="City" />
+                <select name="State" id="checkout_state" aria-label="State">
                   <option value="State" disabled>State</option>
                   <option value="Andhra Pradesh">Andhra Pradesh</option>
                   <option value="Andaman and Nicobar Islands">
@@ -316,10 +321,11 @@
                   type="number"
                   id="checkout_pincode"
                   placeholder="Pincode"
+                  aria-label="Pincode"
                 />
               </div>
               <div id="checkout_phone">
-                <input type="number" id="checkout_phone1" placeholder="Phone" />
+                <input type="number" id="checkout_phone1" placeholder="Phone" aria-label="Phone number" />
               </div>
               <!-- <div id="checkout_checkbox_bottom">
                             <input type="checkbox" name="" id="checkout_checkbox_bottom1">

@@ -75,6 +75,24 @@ pay_button.addEventListener(
   }, 2000)
 );
 
+// Attach card icon click handlers instead of inline onclicks
+[
+  "fa-fa-cc-visa1",
+  "fa-fa-cc-amex1",
+  "fa-fa-cc-mastercard1",
+  "fa-fa-cc-discover1",
+].forEach((id, idx) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener("click", () => {
+    closeIcons();
+    if (idx === 0) openIconOne();
+    if (idx === 1) openIconTwo();
+    if (idx === 2) openIconThree();
+    if (idx === 3) openIconFour();
+  });
+});
+
 // const thankyou_page=(func,delay)=>{
 
 // }

@@ -1,4 +1,3 @@
-
 let checkout_cart = () => {
   // console.log("1st Checkout");
   return `<div class="checkoutmid_p2">
@@ -68,35 +67,45 @@ let checkout_cart = () => {
 </span>
 </div>
 </div>`;
-}
+};
 // export {checkout_cart};
 
-let apply_coupan=()=>{
-  // console.log(1000);
-  document.querySelector(".checkout_apply_coupan_b").addEventListener("click",()=>{
-  // let coupan_applied=()=>{
-    // event.preventDefault();
-    let coupon=document.querySelector(".checkout_gift_coupan_input").value;
-      if(coupon=="BLISS20"){
-       let total= document.querySelector(".checkout_cart_total_price").value;
-       let rest=(total-(total/5));
-      //  console.log(1000);
-       document.querySelector(".checkout_cart_total_price").innerText=rest;
+let apply_coupan = () => {
+  // Apply coupon for the first and second checkout blocks (if present).
+  const applyFor = (btnId, inputId, subtotalId, totalSpanId) => {
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      const coupon = (document.getElementById(inputId) || {}).value || "";
+      const subtotalEl = document.getElementById(subtotalId);
+      const totalSpan = document.getElementById(totalSpanId);
+      if (!subtotalEl) return;
+      let total = Number(subtotalEl.innerText) || 0;
+      if (coupon.trim() === "BLISS20") {
+        const rest = total - total * 0.2; // 20% off
+        subtotalEl.innerText = rest.toFixed(2);
+        if (totalSpan) totalSpan.innerText = rest.toFixed(2);
       }
-      else{
-        // console.log("not running");
-      }
-    // })
-    // return coupan_applied();
-      
+    });
+  };
 
-   
-  
-})
-}
+  applyFor(
+    "checkoutCouponButton1",
+    "couponInput1",
+    "couponSubtotal1",
+    "total_price_span1"
+  );
+  applyFor(
+    "checkoutCouponButton2",
+    "couponInput2",
+    "couponSubtotal2",
+    "total_price_span2"
+  );
+};
+
+apply_coupan();
 
 // apply_coupan();
-
 
 let checkout_cart1 = () => {
   // console.log("2st Checkout");
@@ -164,28 +173,23 @@ let checkout_cart1 = () => {
 <p class="checkout_tax_p"></p></div>
 <span id="total_price_span2" ></span>
 </div>
-</div>`
-}
+</div>`;
+};
 // export {checkout_cart1};
-
-
-
-
-
 
 let bottom_checkout_part = () => {
   return `<a href="" class="checkout_bottom_p1">Refund policy</a>
   <a href="" class="checkout_bottom_p2">Shipping policy</a>
   <a href="" class="checkout_bottom_p3">Privacy policy</a>
-  <a href="" class="checkout_bottom_p4">Terms of sevices</a>`
-}
+  <a href="" class="checkout_bottom_p4">Terms of sevices</a>`;
+};
 
 // console.log(allitem);
 function displayitems(allitem) {
-  let total_price=0;
+  let total_price = 0;
 
-  allitem.forEach(element => {
-    total_price+=Number((element.price1)*(element.quantity));
+  allitem.forEach((element) => {
+    total_price += Number(element.price1 * element.quantity);
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
     let th2 = document.createElement("th");
@@ -200,74 +204,64 @@ function displayitems(allitem) {
     image.setAttribute("id", "checkout_cart_item_image");
     image.src = element.image1;
     th2.append(element.name);
-    td3.append(element.countofitem);
+    td3.append(element.quantity || element.countofitem);
     td3.setAttribute("class", "checkout_hidden_item");
     td4.append(element.price1);
     let imgthumb = document.createElement("span");
-    imgthumb.setAttribute("class", "checkout_cart_thumbanail")
+    imgthumb.setAttribute("class", "checkout_cart_thumbanail");
     thumbdiv.setAttribute("class", "checkout_image_thumb_main");
-    imagediv.setAttribute("class", "checkout_cart_image")
+    imagediv.setAttribute("class", "checkout_cart_image");
     imgthumb.append(element.quantity);
     imagediv.append(image);
     thumbdiv.append(imagediv, imgthumb);
     td1.append(thumbdiv);
     tr.append(td1, th2, td3, td4);
     document.querySelector("#tbody_mid2").append(tr);
-  })
+  });
   // console.log(total_price ," lol");
-  document.getElementById("total_price_span1").innerText =total_price;
-  document.getElementById("total_price_span2").innerText =total_price;
-  document.getElementById("couponSubtotal1").innerText =total_price;
-  document.getElementById("couponSubtotal2").innerText =total_price;
-
+  document.getElementById("total_price_span1").innerText = total_price;
+  document.getElementById("total_price_span2").innerText = total_price;
+  document.getElementById("couponSubtotal1").innerText = total_price;
+  document.getElementById("couponSubtotal2").innerText = total_price;
 }
 
-
-
-
-
-function displayitems1(allitem){
-  let total_price=0;
-  allitem.forEach(element => {
-    total_price+=element.price1*(element.quantity);
-   let tr=document.createElement("tr");
-   let td1=document.createElement("td");
-   let th2=document.createElement("th");
-   let td3=document.createElement("td");
-   let td4=document.createElement("td");
-   let thumbdiv=document.createElement("div");
-   let imagediv=document.createElement("div");
-  //  console.log(element);
-   let itemdiv=document.createElement("div");
-   itemdiv.setAttribute("id","checkout_cart_itemdiv");
-   let image=document.createElement("img");
-   image.setAttribute("id","checkout_cart_item_image");
-   image.src=element.image1;
-   th2.append(element.name);
-   td3.append(element.countofitem);
-   td3.setAttribute("class","checkout_hidden_item");
-   td4.append(element.price1);
-   let imgthumb=document.createElement("span");
-   imgthumb.setAttribute("class","checkout_cart_thumbanail")
-   thumbdiv.setAttribute("class","checkout_image_thumb_main");
-   imagediv.setAttribute("class","checkout_cart_image")
-   imgthumb.append(element.quantity);
-   imagediv.append(image);
-   thumbdiv.append(imagediv,imgthumb);
-   td1.append(thumbdiv);
-   tr.append(td1,th2,td3,td4);
-   document.querySelector("#tbody_items").append(tr);
-  })
+function displayitems1(allitem) {
+  let total_price = 0;
+  allitem.forEach((element) => {
+    total_price += element.price1 * element.quantity;
+    let tr = document.createElement("tr");
+    let td1 = document.createElement("td");
+    let th2 = document.createElement("th");
+    let td3 = document.createElement("td");
+    let td4 = document.createElement("td");
+    let thumbdiv = document.createElement("div");
+    let imagediv = document.createElement("div");
+    //  console.log(element);
+    let itemdiv = document.createElement("div");
+    itemdiv.setAttribute("id", "checkout_cart_itemdiv");
+    let image = document.createElement("img");
+    image.setAttribute("id", "checkout_cart_item_image");
+    image.src = element.image1;
+    th2.append(element.name);
+    td3.append(element.quantity || element.countofitem);
+    td3.setAttribute("class", "checkout_hidden_item");
+    td4.append(element.price1);
+    let imgthumb = document.createElement("span");
+    imgthumb.setAttribute("class", "checkout_cart_thumbanail");
+    thumbdiv.setAttribute("class", "checkout_image_thumb_main");
+    imagediv.setAttribute("class", "checkout_cart_image");
+    imgthumb.append(element.quantity);
+    imagediv.append(image);
+    thumbdiv.append(imagediv, imgthumb);
+    td1.append(thumbdiv);
+    tr.append(td1, th2, td3, td4);
+    document.querySelector("#tbody_items").append(tr);
+  });
   // console.log(total_price);
-  document.querySelector(".checkout_cart_total_price").innerText=total_price;
-
+  document.querySelector(".checkout_cart_total_price").innerText = total_price;
 }
-
 
 // export {displayitems1};
-
-
-
 
 // let contact_adress_html=()=>{
 //   return`<div class="checkout_contact_email">
@@ -280,23 +274,20 @@ function displayitems1(allitem){
 // </div>`
 // }
 
-
 // console.log("ram");
 
 let shipping_item = () => {
   // let email=JSON.parse(localStorage.getItem("email"))
   let adress = JSON.parse(localStorage.getItem("adress"));
-  let email1 = document.querySelector(".shipping_email").innerText = adress.email;
+  let email1 = (document.querySelector(".shipping_email").innerText =
+    adress.email);
   let final_adress = `${adress.adress1},${adress.apartment},${adress.city},${adress.state},${adress.pincode}`;
-  let all_adress = document.querySelector(".shipping_adress").innerText = final_adress;
+  let all_adress = (document.querySelector(".shipping_adress").innerText =
+    final_adress);
 
   // shipping_email.innerText=email;
-  console.log(adress);
-}
+};
 //  shipping_item();
-
-
-
 
 // function append_adress() {
 //  let data=JSON.parse(localStorage.getItem("adress"))||[];
@@ -325,10 +316,11 @@ let shipping_item = () => {
 // //  }
 // }
 
-
-
-
-
-
-
-export {apply_coupan, checkout_cart, checkout_cart1, displayitems,displayitems1, shipping_item };
+export {
+  apply_coupan,
+  checkout_cart,
+  checkout_cart1,
+  displayitems,
+  displayitems1,
+  shipping_item,
+};

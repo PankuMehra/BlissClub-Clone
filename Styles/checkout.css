@@ -44,7 +44,7 @@
 }
 #checkout_mid_page {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* information page left side div css*/
@@ -310,13 +310,14 @@
   width: 40%;
 }
 .checkoutmid_p2 {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
 #checkout_cart_item_image {
   width: 80px;
   height: 80px;
+  border-radius: 5px;
 }
 #checkout_cart_itemdiv {
   display: flex;
@@ -439,8 +440,8 @@
 }
 
 .checkout_table_div {
-  border: 1px solid #f99584;
-  width: 90%;
+  /* border: 1px solid #f99584; */
+  width: 100%;
   height: 200px;
   overflow-y: scroll;
   border-bottom: 1px solid #cbc5c1;
@@ -509,44 +510,57 @@ td {
 }
 
 @media (max-width: 999px) {
-  /* #checkout_mid_page {
-        flex-direction: column-reverse;
-        display: flex;
-        
-        background: white;
-        margin: auto;
-        } */
+  /* Mobile / tablet adjustments */
   #checkout_mid_page {
     width: 100%;
-    /* flex-direction: column-reverse; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .checkout_mid1 {
     display: block;
-    width: 90%;
-    min-width: 300px;
-    margin: auto;
-    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+    overflow: visible;
     word-wrap: normal;
-    /* word-wrap: break-word; */
+    padding-bottom: 12px;
   }
   .checkout_mid2 {
-    display: none;
+    display: block;
+    width: 95%;
+    margin: 0 auto 20px auto;
+    background: #fff;
+    padding: 14px;
+    border-radius: 6px;
   }
 
-  .checkout_mid_hidden {
-    display: none;
-  }
-  .shippingradio {
-    display: none;
-    /* background-color: transparent; */
-    width: 6px;
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  #checkout_button_shipping {
-    min-width: fit-content;
-  }
+  /* Collapse large hidden summary controls */
+  .checkout_mid_hidden { display: none; }
+  .shippingradio { display: none; }
+
+  /* Make action buttons stack and become full-width */
+  #checkout_button { height: auto; padding: 12px 0; gap: 10px; flex-direction: column; }
+  #checkout_button_returncart, #checkout_button_shipping { width: 100%; display: inline-block; text-align: center; padding: 12px 14px; }
+
+  /* Improve form field stacking and widths on small devices */
+  #checkout_name { display: flex; flex-direction: column; gap: 10px; }
+  #checkout_city_pin { display: flex; flex-direction: column; gap: 10px; }
+  #checkout_city, #checkout_state, #checkout_pincode { width: 100%; }
+
+  #checkout_bottom_p { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; padding: 8px 0 24px; }
+
+  #checkout_emailbox, #checkout_first_name, #checkout_last_name, #checkout_adress1, #checkout_apartment, #checkout_phone1 { width: 100%; }
+
+  #checkout_mid_page { padding: 12px 0; }
+}
+
+@media (max-width: 480px) {
+  .checkout_nav_div1 > a > img { width: 40%; }
+  .checkout_bp1 > ol { width: 100%; gap: 8px; overflow-x: auto; }
+  .checkout_info1 { padding: 0 6px; }
+  #checkout_emailbox, input[type="text"], select { height: 44px; }
+  #checkout_button_returncart, #checkout_button_shipping { padding: 12px; font-size: 14px; }
 }
 
 #successfullBox {
@@ -585,3 +599,30 @@ td {
     opacity: 0%;
   }
 }
+
+/* Card, CTA, and accessibility improvements */
+.checkout_adress_div, .checkout_adress_div1, .shipping_method_rediobox1, .checkout_mid2 {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  border: 1px solid #eee;
+}
+
+
+
+.primary-btn{ background-color:#000; color:#fff; border-radius:8px; padding:12px 20px; display:inline-block; text-decoration:none; min-width:160px; text-align:center; }
+.primary-btn:hover{ background-color:#222; }
+
+input:focus, select:focus, textarea:focus{ outline:none; border:2px solid #f99584; box-shadow:0 4px 12px rgba(249,149,132,0.08); }
+
+@media(min-width:1000px){
+  .checkout_mid2{ position: sticky; top:24px; align-self:flex-start; max-width:430px; }
+  #checkout_mid_page{ display:flex; gap:24px; align-items:flex-start; }
+}
+
+/* Smaller touch targets */
+@media (max-width: 480px){
+  .primary-btn{ width:100%; padding:12px; }
+}
+

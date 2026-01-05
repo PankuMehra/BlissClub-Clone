@@ -45,6 +45,15 @@
 .payment_billing_changed{
     margin-top: 30px;
 }
+
+
+
+
+@media (max-width: 480px){
+  .shipping_adress1{ width: 100%; }
+  #cod_shipping_method{ width: 100%; }
+  #cod_div1{ padding: 8px; }
+}
 #revisit_adress{
     border: 1px solid #f99584;
 }

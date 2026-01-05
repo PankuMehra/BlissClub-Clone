@@ -71,7 +71,9 @@ let checkCoupon = () => {
       localStorage.setItem("couponApplied", true);
     }
   } else {
-    document.getElementById("successfullAlert").innerText = `Coupon already Applied`;
+    document.getElementById(
+      "successfullAlert"
+    ).innerText = `Coupon already Applied`;
     document.getElementById("successfullAlert").style.backgroundColor = "red";
     document.getElementById("successfullAlert").style.display = "flex";
     setTimeout(function () {

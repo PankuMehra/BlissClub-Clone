@@ -207,17 +207,17 @@
       <label>Amount: ₹</label>
       <input type="text" id="sort" onchange="sortCode()">
       <label>Card Type:</label>
-      <i class="fa fa-cc-visa" id="fa-fa-cc-visa1" onclick="closeIcons(); openIconOne();"></i>
-      <i class="fa fa-cc-amex" id="fa-fa-cc-amex1" onclick="closeIcons(); openIconTwo();"></i>
-      <i class="fa fa-cc-mastercard" id="fa-fa-cc-mastercard1" onclick="closeIcons(); openIconThree();"></i>
-      <i class="fa fa-cc-discover" id="fa-fa-cc-discover1" onclick="closeIcons(); openIconFour();"></i>
+      <i class="fa fa-cc-visa" id="fa-fa-cc-visa1"></i>
+      <i class="fa fa-cc-amex" id="fa-fa-cc-amex1"></i>
+      <i class="fa fa-cc-mastercard" id="fa-fa-cc-mastercard1"></i>
+      <i class="fa fa-cc-discover" id="fa-fa-cc-discover1"></i>
       <div class="input" id="cardType"></div>
       <label>Security Number (back of card):</label>
       <input type="text" id="security" onchange="securityCode()">
       <br>
     </form>
     <div id="payment_process_div">
-        <button onclick="thankyou_page()" id="payment_process_btn">Process payment</button>
+        <button id="payment_process_btn">Process payment</button>
     </div>
   </div>
 </div>
