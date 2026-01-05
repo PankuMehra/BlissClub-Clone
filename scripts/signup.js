@@ -1,7 +1,7 @@
 import { footer } from "../utils/footer-exp.js";
 import { navBar, topNavBar } from "../utils/nav-bar-exp.js";
 
-console.log(navBar);
+
 document.getElementById("section-header").innerHTML = topNavBar();
 document.getElementById("myFooter").innerHTML = footer();
 

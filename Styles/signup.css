@@ -142,3 +142,21 @@
   background: rgb(2, 0, 0);
   transition: color 0.3s ease 0s, background 0s ease 0.3s;
 }
+
+/* Responsive design for mobile and smaller screens */
+@media (max-width: 768px) {
+  #login-Body {
+    height: auto;
+    padding: 20px;
+  }
+  #card {
+    width: 90%;
+    padding: 20px;
+  }
+  .lb {
+    height: 45px;
+  }
+  .hbtn {
+    height: 45px;
+  }
+}
