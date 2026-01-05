@@ -2,12 +2,31 @@
     #complete_box{
         max-width:950px;
         margin:auto;
+        padding: 20px;
     }
 
     #heading_box{
         width:100%;
         display:flex;
+        align-items: center;
+        gap: 12px;
     }
+    .heading_item{
+        font-size: 15px;
+        color: #4a4a4a;
+        display:flex;
+        align-items: center;
+    }
+    .heading_center{
+        justify-content: center;
+    }
+    .heading_total{
+        display:block;
+        width:100%;
+        text-align: right;
+    }
+
+    .mobile_label{ display: none; }
 
     .product_image{
         width:100%;
@@ -205,28 +224,37 @@ a.remove_button:hover:before {
         color:black;
     }
 
-    @media only screen and (max-width: 625px){
+    .page-heading{
+        text-align: center;
+        color: #313030;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 18px 0;
+    }
 
-        .product_image_div{
-            width:90px;
-            height: 129.75px;
-        }
+    @media only screen and (max-width: 768px){
+        /* hide the global header row on small screens to avoid misalignment */
+        #heading_box{ display: none; }
+        .heading_item{ justify-content: flex-start; }
 
-        .first_sixty_percent{
-            height:129.75px;
-        }
+        /* show compact labels inside each product row */
+        .mobile_label{ display: block; font-size:12px; color:#6a6a6a; margin-bottom:6px; }
+        .first_sixty_percent .mobile_label{ margin-right:8px; }
 
-        .quantity_div{
-            height: 129.75px;
-        }
+        .product{ flex-direction: column; gap:12px; }
+        .product_image_div{ width:100%; height:auto; }
+        .first_sixty_percent{ width:100%; height:auto; display:flex; gap:12px; align-items:center; }
+        .quantity_div{ width:100%; height:auto; display:flex; justify-content:flex-start; align-items:center; padding-top: 8px; }
+        .price_div{ width:100%; height:auto; display:flex; justify-content:space-between; align-items:center; padding-top: 8px; flex-direction: row; }
+        .product_quantity_box{ width: auto; height: 40px; margin-left:0; }
+        #footer_inside_div{ width:100%; align-items: center; }
+        #cart_checkout_button{ width:100%; padding:12px 16px; }
+        #empty_cart{ height:auto; padding: 40px 20px; }
+    }
 
-        .price_div{
-            height: 129.75px;
-        }
-
-        .product_quantity_box{
-            width:68px;
-            height:30px;
-        }
-
+    @media only screen and (max-width: 480px){
+        .product_name{ font-size: 16px; }
+        .product_price{ font-size: 13px; }
+        .product_quantity_box{ height:36px; }
+        #cart_checkout_button{ padding: 10px; }
     }
