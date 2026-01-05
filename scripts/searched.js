@@ -46,7 +46,7 @@ fetchData(Url).then(function (data) {
     let L2H = arr.sort(function (a, b) {
       return Number(a.price1) - Number(b.price1);
     });
-    console.log(L2H)
+
     displayData(L2H);
   };
   // High to Low Sorting
