@@ -47,20 +47,20 @@ document.getElementById("submit-search").addEventListener("click", (event) => {
   // }
 });
 
-document.getElementById("side-search").addEventListener("keypress", (event) => {
-  if (event.key === "Enter") {
+document.getElementById("side-submit-search").addEventListener("click", (event) => {
+  // if (event.key === "Enter") {
     event.preventDefault();
     let searchIt = document.getElementById("side-search").value;
     localStorage.setItem("searchIt", searchIt);
     location.href = "./searched.html";
-  }
+  // }
 });
 
 
 let currentUser = localStorage.getItem("Username") || "";
 
 if (currentUser == "") {
-  document.getElementById("current-user").innerText = "EARN Blisscoins ›";
+  document.getElementById("current-user").innerText = "Login ›";
 } else {
   document.getElementById("current-user").innerText = currentUser + " ›";
 }
@@ -72,7 +72,8 @@ let profileORlogin = () => {
     location.href = "./login.html";
   } else {
     console.log("Logged in");
-    location.href = "./profile.html";
+    localStorage.clear();
+    location.href = "./index.html";
   }
 };
 document

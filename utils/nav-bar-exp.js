@@ -69,20 +69,20 @@ let navBar = () => {
             <a href="#" class="side-nav-head-buttons">
               <img
                 class="side-nav-royality-image"
-                src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/Loyalty-Logo_200x.png?v=127916081523299122021658468464"
-                alt="royalit-program-imagee"
+                src="./images/blissclub_logos.avif"
+                alt="royality-blissclub-image"
               />
             </a>
           </div>
           <div class="side-nav-head">
-            <form class="side-bar-search-menu" action="/search">
+            <form class="side-bar-search-menu">
               <input
                 id="side-search"
                 class="input-search-procucts"
                 type="text"
                 placeholder="search our products"
               />
-              <button class="submit-search" id="side-submit-search" type="submit"></button>
+              <button class="submit-search" id="side-submit-search" type="submit"><ion-icon class="search-icon" name="search"></ion-icon></button>
             </form>
           </div>
         </nav>
@@ -182,26 +182,16 @@ let topNavBar = () => {
   <div class="header-item2">
     <a id="header-item-image-account" href="">
       <span id="current-user"></span>
-      <img
-        src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/account-mob_40x.png?v=133119758951624850871658468464"
-        alt=""
-      />
     </a>
     <a id="header-item-image-whatsapp" href="https://api.whatsapp.com/send?phone=919900001845&text=Hey%20BlissClub">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/whatsapp-bliss_40x.png?v=126833938998310098061663749308"
-        alt=""
-      />
+      <ion-icon id="whatsapp-icon" name="logo-whatsapp"></ion-icon>
     </a>
     <a class="btn btn-primary"
     id="home-CartIcon"
     data-bs-toggle="offcanvas"
     data-bs-target="#offcanvasRight"
     aria-controls="offcanvasRight" id="header-item-image-cart" href="">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0404/0196/1115/t/60/assets/cart_40x.png?v=96190718169835338971658468464"
-        alt=""
-      />
+      <ion-icon id="cart-icon" name="cart-outline"></ion-icon>
     </a>
   </div>
 </div>`;
