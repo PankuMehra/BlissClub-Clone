@@ -419,3 +419,51 @@ margin-left: 20px;
     opacity: 0%;
   }
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #view-product-product-Body { padding: 40px; }
+  #view-product-LeftSideImages { width: 9%; }
+  #view-product-mainImageDiv { width: 48%; }
+  .view-product-itemDetails { width: 40%; }
+  #view-product-selectQuantity { width: 22%; }
+}
+
+@media (max-width: 768px) {
+  #view-product-product-Body {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #view-product-LeftSideImages {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 6px 0;
+    background-color: transparent;
+  }
+  #view-product-LeftSideImages > img {
+    width: 80px;
+    height: auto;
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+  #view-product-mainImageDiv, .view-product-itemDetails {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .view-product-itemDetails { padding: 12px; }
+  #view-product-priceBox { align-items: center; gap: 10px; }
+  #view-product-select-color-Box { flex-wrap: wrap; gap: 8px; }
+  #view-product-sizeButton1 > button, #view-product-sizeButton2 > button { padding: 10px; margin-bottom: 8px; }
+  #view-product-selectQuantity { width: 100%; }
+  #view-product-addToBasket, #view-product-addedToBasket { width: 100%; }
+  #view-product-sizeChartModalBox, #view-product-sizeNameModalBox { top: 0; height: 100%; }
+}
+
+@media (max-width: 420px) {
+  #view-product-LeftSideImages > img { width: 70px; }
+  #view-product-itemName { font-size: 22px; }
+  #view-product-price { font-size: 18px; margin-left: 8px; }
+}

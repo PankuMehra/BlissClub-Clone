@@ -22,7 +22,7 @@ function slidebar() {
           <a href="./pants.html"
             ><img
               src="https://cdn.shopify.com/s/files/1/0404/0196/1115/files/Cotton_Flare-Circular_Thumbnail1.jpg?v=1663950652"
-              alt=""
+              alt="pants"
           /></a>
         </div>
         <a href="./pants.html">Pants</a>
@@ -112,6 +112,7 @@ function displayData(data) {
     let image = document.createElement("img");
     let nameAnchor = document.createElement("a");
     let name = document.createElement("h5");
+    let detailsBox = document.createElement("div");
     let priceBox = document.createElement("div");
     let price = document.createElement("p");
     let strikedPrice = document.createElement("p");
@@ -128,7 +129,8 @@ function displayData(data) {
     priceBox.append(strikedPrice, price);
     imageAnchor.append(image);
     nameAnchor.append(name);
-    itemBox.append(imageAnchor, nameAnchor, priceBox);
+    detailsBox.append(nameAnchor, priceBox);
+    itemBox.append(imageAnchor, detailsBox);
 
     function setItemId() {
       localStorage.setItem("productId", elem.id);
@@ -224,11 +226,11 @@ let filterDataL2H = (data) => {
 
 let filterDataH2L = (data) => {
   let arr = data;
-  console.log("dfbsdg");
+
   let H2L = arr.sort(function (a, b) {
     return Number(b.price1) - Number(a.price1);
   });
-  console.log(H2L);
+
   displayData(H2L);
 };
 
@@ -242,5 +244,5 @@ export {
   HeadingSort,
   filterData,
   filterDataL2H,
-  filterDataH2L
+  filterDataH2L,
 };

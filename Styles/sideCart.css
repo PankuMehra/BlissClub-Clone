@@ -118,9 +118,67 @@
   font-size: 14px;
   letter-spacing: 1.4px;
   font-weight: 100;
-  color: #f06853;
+    color: #f06853;
   margin: auto 0;
 }
+
+/* Empty cart placeholder styles */
+#sideDrawer-empty_cart {
+  padding: 24px 12px;
+  text-align: center;
+  color: #4a4a4a;
+}
+#sideDrawer-empty_cart_line {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.6px;
+}
+#sideDrawer-empty_cart .shop_button {
+  display: inline-block;
+  background: #eb5740;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+#sideDrawer-empty_cart .shop_button:hover {
+  background: #d94b35;
+}
+
+/* Cursor + interaction styles for drawer "You may also like" */
+#drawerUp-productImage img:hover,
+#drawerUp-productName:hover,
+#drawerUp-productAddButton:hover {
+  cursor: pointer;
+}
+
+/* Make buttons consistent when used elsewhere */
+.shop_button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.shop_button:hover {
+  opacity: 0.95;
+}
+
+/* Ensure empty state is responsive on small screens */
+@media (max-width: 420px) {
+  #sideDrawer-empty_cart_line {
+    font-size: 13px;
+  }
+  #sideDrawer-empty_cart .shop_button {
+    padding: 8px 12px;
+  }
+}
+
 #sideDrawer-YouPay {
   letter-spacing: 1.4px;
   font-size: 14px;
@@ -311,31 +369,50 @@
 }
 
 #sideDrawer-ProductBox {
-  /* display: none; */
   width: 100%;
   margin: auto;
   padding: 0px 10px;
-  position: absolute;
-  /* border: 1px solid red; */
-  top: 0px;
-  height: 138px;
-  overflow-y: scroll;
+  position: relative;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  .cart-product {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .cart-productImage {
+    width: 100%;
+  }
+  .cart-productDetailsBox {
+    width: 100%;
+    display: block;
+  }
+  .side-cart-removeAddBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .side-cart-addProduct {
+    margin-top: 6px;
+  }
 }
 #cart-product{
-  display: flex;
-}
-#cart-product {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: rgb(238, 238, 238);
+  margin-bottom: 3px;
   /* display: none; */
-  /* border: 2px solid red; */
 }
 #cart-productImage {
-  width: 30%;
+  width: 20%;
+  object-fit: fill;
 }
 #cart-productDetailsBox {
   width: 46%;

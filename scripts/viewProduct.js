@@ -4,7 +4,6 @@ import { footer } from "../utils/footer-exp.js";
 import { topNavBar, navBar } from "../utils/nav-bar-exp.js";
 import URL from "../URL/URL.js";
 
-
 document.getElementById("side-nav-Modal").innerHTML = navBar();
 document.getElementById("section-header").innerHTML = topNavBar();
 document.getElementById("chatbot-main").innerHTML = chatbot();
@@ -59,13 +58,12 @@ document
   .getElementById("view-product-addToBasket")
   .addEventListener("click", () => {
     let itemColor = document.getElementById("selectedColor").innerText;
-    console.log("itemColor:", itemColor);
+
     let itemSize = document.getElementById("selectedSize").innerText;
-    console.log("itemSize:", itemSize);
+
     let itemQuantity = document.getElementById(
       "view-product-selectQuantity"
     ).value;
-    console.log("itemQuantity:", itemQuantity);
 
     if (itemColor == "") {
       document.getElementById("successfullAlert").innerText = `Select Color`;
@@ -93,11 +91,9 @@ document
 
       setTimeout(function () {
         document.getElementById("successfullAlert").style.display = "none";
-        
-        let leggingsUrl = `${URL}?id=${productId}`;
-        fetchData(leggingsUrl).then(function (data) {
-          console.log("data:", data);
 
+        let productUrl = `${URL}?id=${productId}`;
+        fetchData(productUrl).then(function (data) {
           let cartObject = new createObj(
             data[0].id,
             data[0].category,
@@ -109,43 +105,44 @@ document
             itemSize,
             itemQuantity,
             true
-            );
-            
-            cartArray.push(cartObject);
-            localStorage.setItem("cart_items", JSON.stringify(cartArray));
-            location.href = "./viewProduct.html";
+          );
+
+          cartArray.push(cartObject);
+          localStorage.setItem("cart_items", JSON.stringify(cartArray));
+          location.href = "./viewProduct.html";
         });
-      }, 1350);
+      }, 1000);
     }
   });
 
 // let productId = localStorage.getItem("productId");
-let leggingsUrl = `${URL}`;
-fetchData(leggingsUrl).then(function (data) {
-  // console.log(data);
+let productUrl = `${URL}`;
+fetchData(productUrl).then(function (allData) {
+  let data = allData.find((elem) => elem.id === productId);
 
-  document.getElementById("view-product-mainImageDiv").innerHTML = `<img src="${
-    data[Number(productId) - 1].image1
-  }" alt="">`;
-  document.getElementById("view-product-itemName").innerText =
-    data[Number(productId) - 1].name;
+  document.getElementById(
+    "view-product-mainImageDiv"
+  ).innerHTML = `<img src="${data.image1}" alt="">`;
+  document.getElementById("view-product-itemName").innerText = data.name;
   document.getElementById("view-product-price").innerText =
-    "Rs. " + data[Number(productId) - 1].price1;
+    "Rs. " + data.price1;
   document.getElementById("view-product-strikedPrice").innerText =
-    "Rs. " + data[Number(productId) - 1].price2;
+    "Rs. " + data.price2;
 
   for (let i = 0; i < 5; i++) {
-    let randomNum = Math.round(Math.random() * (data.length - 1));
-    console.log(randomNum);
+    let randomNum = Math.round(Math.random() * (allData.length - 1));
     let leftImage = document.createElement("img");
-    leftImage.src = data[randomNum].image1;
+    leftImage.src = allData[randomNum].image1;
     leftImage.id = "view-product-MightLike";
     document.getElementById("view-product-LeftSideImages").append(leftImage);
+    if (i == 0) {
+      localStorage.setItem("mightLikeProductId", allData[randomNum].id);
+    }
 
     leftImage.addEventListener("click", setItemId);
 
     function setItemId() {
-      localStorage.setItem("productId", randomNum + 1);
+      localStorage.setItem("productId", allData[randomNum].id);
       location.href = "./viewProduct.html";
     }
   }
